@@ -1,18 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
 #Chat_Space DB設計
 ## usersテーブル
 
@@ -62,6 +49,18 @@ Things you may want to cover:
 - belongs_to :user
 - belongs_to :group
 
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
 
 * Database initialization
 
