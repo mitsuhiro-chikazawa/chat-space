@@ -2,3 +2,164 @@
   [1m[35m (2.8ms)[0m  [1m[35mCREATE DATABASE `chat_space_development` DEFAULT CHARACTER SET `utf8`[0m
   [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
   [1m[35m (2.3ms)[0m  [1m[35mCREATE DATABASE `chat_space_test` DEFAULT CHARACTER SET `utf8`[0m
+Started GET "/" for ::1 at 2020-08-04 08:42:34 +0900
+  [1m[35m (8.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (Duration: 10.6ms | Allocations: 3273)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mitsuhirochikazawa/projects/chat-space/public/packs
+[Webpacker] Hash: 15d1bb7b54cf6326b9ba
+Version: webpack 4.44.0
+Time: 2124ms
+Built at: 2020/08/04 8:42:40
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9afcbb5693aa87623e69.js    124 KiB  application  [emitted] [immutable]  application
+js/application-9afcbb5693aa87623e69.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9afcbb5693aa87623e69.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 5389ms (Views: 5380.6ms | ActiveRecord: 0.0ms | Allocations: 1405020)
+
+
+Started GET "/" for ::1 at 2020-08-04 08:54:01 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (Duration: 0.2ms | Allocations: 15)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.0ms | Allocations: 18810)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: modules/messages.
+Load paths:
+  /Users/mitsuhirochikazawa/projects/chat-space/app/assets/config
+  /Users/mitsuhirochikazawa/projects/chat-space/app/assets/images
+  /Users/mitsuhirochikazawa/projects/chat-space/app/assets/stylesheets
+  /Users/mitsuhirochikazawa/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/actioncable-6.0.3.2/app/assets/javascripts
+  /Users/mitsuhirochikazawa/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activestorage-6.0.3.2/app/assets/javascripts
+  /Users/mitsuhirochikazawa/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/actionview-6.0.3.2/lib/assets/compiled
+  /Users/mitsuhirochikazawa/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/mitsuhirochikazawa/projects/chat-space/node_modules):
+     5:     %title ChatSpace
+     6:     = csrf_meta_tags
+     7:     = csp_meta_tag
+     8:     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+     9:     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    10:   %body
+    11:     = yield
+  
+app/assets/stylesheets/application.scss:2
+app/views/layouts/application.html.haml:8
+Started GET "/" for ::1 at 2020-08-04 09:36:28 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side_bar.html.haml (Duration: 0.9ms | Allocations: 1364)
+  Rendered messages/_main_chat.html.haml (Duration: 0.9ms | Allocations: 1357)
+  Rendered messages/index.html.haml within layouts/application (Duration: 6.3ms | Allocations: 6438)
+Completed 500 Internal Server Error in 198ms (ActiveRecord: 0.0ms | Allocations: 304211)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: modules/messages.
+Load paths:
+  /Users/mitsuhirochikazawa/projects/chat-space/app/assets/config
+  /Users/mitsuhirochikazawa/projects/chat-space/app/assets/images
+  /Users/mitsuhirochikazawa/projects/chat-space/app/assets/stylesheets
+  /Users/mitsuhirochikazawa/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/actioncable-6.0.3.2/app/assets/javascripts
+  /Users/mitsuhirochikazawa/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activestorage-6.0.3.2/app/assets/javascripts
+  /Users/mitsuhirochikazawa/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/actionview-6.0.3.2/lib/assets/compiled
+  /Users/mitsuhirochikazawa/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/mitsuhirochikazawa/projects/chat-space/node_modules
+  /Users/mitsuhirochikazawa/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/font-awesome-sass-5.13.0/assets/stylesheets
+  /Users/mitsuhirochikazawa/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/font-awesome-sass-5.13.0/assets/fonts):
+     5:     %title ChatSpace
+     6:     = csrf_meta_tags
+     7:     = csp_meta_tag
+     8:     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+     9:     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    10:   %body
+    11:     = yield
+  
+app/assets/stylesheets/application.scss:2
+app/views/layouts/application.html.haml:8
+Started GET "/" for ::1 at 2020-08-04 09:40:11 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side_bar.html.haml (Duration: 0.0ms | Allocations: 11)
+  Rendered messages/_main_chat.html.haml (Duration: 0.0ms | Allocations: 9)
+  Rendered messages/index.html.haml within layouts/application (Duration: 0.4ms | Allocations: 174)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 11116)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: modules/messages.
+Load paths:
+  /Users/mitsuhirochikazawa/projects/chat-space/app/assets/config
+  /Users/mitsuhirochikazawa/projects/chat-space/app/assets/images
+  /Users/mitsuhirochikazawa/projects/chat-space/app/assets/stylesheets
+  /Users/mitsuhirochikazawa/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/actioncable-6.0.3.2/app/assets/javascripts
+  /Users/mitsuhirochikazawa/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activestorage-6.0.3.2/app/assets/javascripts
+  /Users/mitsuhirochikazawa/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/actionview-6.0.3.2/lib/assets/compiled
+  /Users/mitsuhirochikazawa/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/mitsuhirochikazawa/projects/chat-space/node_modules
+  /Users/mitsuhirochikazawa/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/font-awesome-sass-5.13.0/assets/stylesheets
+  /Users/mitsuhirochikazawa/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/font-awesome-sass-5.13.0/assets/fonts):
+     5:     %title ChatSpace
+     6:     = csrf_meta_tags
+     7:     = csp_meta_tag
+     8:     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+     9:     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    10:   %body
+    11:     = yield
+  
+app/assets/stylesheets/application.scss:2
+app/views/layouts/application.html.haml:8
+Started GET "/" for ::1 at 2020-08-04 09:42:50 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side_bar.html.haml (Duration: 0.1ms | Allocations: 10)
+  Rendered messages/_main_chat.html.haml (Duration: 0.0ms | Allocations: 9)
+  Rendered messages/index.html.haml within layouts/application (Duration: 0.6ms | Allocations: 169)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 11084)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: modules/messages.
+Load paths:
+  /Users/mitsuhirochikazawa/projects/chat-space/app/assets/config
+  /Users/mitsuhirochikazawa/projects/chat-space/app/assets/images
+  /Users/mitsuhirochikazawa/projects/chat-space/app/assets/stylesheets
+  /Users/mitsuhirochikazawa/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/actioncable-6.0.3.2/app/assets/javascripts
+  /Users/mitsuhirochikazawa/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activestorage-6.0.3.2/app/assets/javascripts
+  /Users/mitsuhirochikazawa/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/actionview-6.0.3.2/lib/assets/compiled
+  /Users/mitsuhirochikazawa/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/mitsuhirochikazawa/projects/chat-space/node_modules
+  /Users/mitsuhirochikazawa/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/font-awesome-sass-5.13.0/assets/stylesheets
+  /Users/mitsuhirochikazawa/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/font-awesome-sass-5.13.0/assets/fonts):
+     5:     %title ChatSpace
+     6:     = csrf_meta_tags
+     7:     = csp_meta_tag
+     8:     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+     9:     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    10:   %body
+    11:     = yield
+  
+app/assets/stylesheets/application.scss:2
+app/views/layouts/application.html.haml:8
+Started GET "/" for ::1 at 2020-08-04 09:44:01 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side_bar.html.haml (Duration: 0.1ms | Allocations: 10)
+  Rendered messages/_main_chat.html.haml (Duration: 0.1ms | Allocations: 9)
+  Rendered messages/index.html.haml within layouts/application (Duration: 1.2ms | Allocations: 170)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3140ms (Views: 3137.3ms | ActiveRecord: 0.0ms | Allocations: 2695441)
+
+
