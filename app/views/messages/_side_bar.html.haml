@@ -1,1 +1,16 @@
-<サイドバー>
+.sidebar
+  .sidebar__user--name
+    .sidebar__user--name__top-items
+      .sidebar__user--name__top-items__name
+        masa
+      .sidebar__user--name__top-items__icons
+        = link_to "#", class: "sidebar__user--name__top-items__btn top-items__btn--edit" do
+          = icon('far', 'edit', class: "items__btn--icon")
+        = link_to "#", class: "sidebar__user--name__top-items__btn top-items__btn--cog" do
+          = icon('fas', 'cog', class: "items__btn--icon")
+  .sidebar__group--list
+    .sidebar__group--list__top-items
+      .sidebar__group--list__top-items__group-name
+        techcamp
+      .sidebar__group--list__top-items__group-info
+        まだメッセージがありません
