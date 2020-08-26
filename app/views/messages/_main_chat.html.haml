@@ -2,32 +2,24 @@
   .chatmain__group--info
     .chatmain__group--info__top-items
       .chatmain__group--info__top-items--group
-        test
+        = @group.name
       .chatmain__group--info__top-items--member
-        Member:masa
+        Member：
+        %ul.list
+          - @group.users.each do |user|
+            %li.gest= user.name
     .chatmain__group--info__top-items--edit
-      = link_to "#", class: "chatmain__group--info__top-items--edit top-items__edit--btn" do
+      = link_to edit_group_path(@group), class: "chatmain__group--info__top-items--edit top-items__edit--btn" do
         = "Edit"
 
-  .chatmain__message--list
-    .chatmain__message--list__top-items
-      .chatmain__message--list__top-items__content
-        .chatmain__message--list__top-items__content__mess
-          .chatmain__message--list__top-items__content__mess__user
-            masa
-          .chatmain__message--list__top-items__content__mess__date
-            2020/08/09(Sun) 08:41:01
-        .chatmain__message--list__top-items__content__message
-          おはよう！
 
+  .chatmain__message--field
+    = render @messages
   .chatmain__message--form
-    .chatmain__message--form__top-items
-      .chatmain__message--form__top-items__form-box
-        .chatmain__message--form__top-items__form-box__text
-          %input.text{:name => "message", :placeholder => "type a message", :type => "text", :value => ""}/
-        .chatmain__message--form__top-items__form-box__icon
-          %label{class: "form-box__icon"}
-            = icon('fas', 'image')
-            %input{class: "input",type: "file"}
-      .chatmain__message--form__top-items__send-btn
-        %input.btn{:name => "send", :placeholder => "", :type => "submit", :value => "Send"}/
+    = form_with model: [@group, @message], html: {class: "form"}, local: true do |f|
+      .form__contents
+        = f.text_field :body, class: 'text', placeholder: 'type a message'
+        = f.label :image, class: 'icon__set' do
+          = icon('far', 'image', class: 'form__icon')
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'btn'
