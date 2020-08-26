@@ -42,16 +42,19 @@
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     &__top-items {
-      color: #ffffff;
-      font-weight: bold;
       margin: 0px 0px 40px 0px;
       padding: 20px 20px 0px 20px;
+      text-decoration: none;
       &__group-name {
         font-size: 15px;
         margin-bottom: 5px;
+        color: #ffffff;
+        font-weight: bold;
       }
       &__group-info {
         font-size: 11px;
+        color: #ffffff;
+        font-weight: bold;
       }
     }
   }
@@ -76,6 +79,13 @@
       font-size: 12px;
       color: #999999;
       margin-left: 40px;
+      display: flex;
+        .list {
+          display: flex;
+          .gest {
+            margin-left: 15px;
+          }
+        }
     }
     &__top-items--edit {
       font-size: 16px;
@@ -88,54 +98,44 @@
     }
 
   }
-  &__message--list {
+  .chatmain__message--field {
     height: calc(100vh - 100px - 90px);
     background-color: #fafafa;
-    &__top-items {
+    .MessageBox {
+      padding-bottom: 46px;
+      padding-top: 35px;
       margin-left: 40px;
-      height: calc(100vh - 100px - 90px);
-      &__content {
-        margin: 0px 0px 46px 0px;
-        padding-top: 35px;
-        &__mess {
-          display: flex;
-          justify-content: left;
-          margin-bottom: 12px;
-         &__user {
-            font-size: 16px;
-            color: #333333;
-            margin-right: 10px;
-          }
-         &__date {
-            font-size: 12px;
-            color: #999999;
-          }
+      .MessageInfo {
+        display: flex;
+        justify-content: left;
+        margin-bottom: 12px;
+        &__userName {
+          font-size: 16px;
+          color: #333333;
+          margin-right: 10px;
         }
-        &__message {
-          font-size: 14px;
-          color: #434A54;
+        &__date {
+        font-size: 12px;
+        color: #999999;
         }
+      }
+      .Message {
+        font-size: 14px;
+        color: #434A54;
       }
     }
   }
-
   &__message--form {
     height: 90px;
     background-color: #d2d2d2;
     padding: 20px 40px 20px 40px;
-    &__top-items {
+    .form {
       height: 50px;
       display: flex;
       justify-content: space-between;
-      &__form-box {
-        width: 100%;
-        height: 50px;
-        display: flex;
-        justify-content: space-between;
+      .form__contents {
         position: relative;
-        &__text {
-          width: 100%; 
-        }
+        width: 100%;
         .text {
           width: 100%;
           height: 50px;
@@ -143,27 +143,25 @@
           padding-right: 45px;
           border: none;
         }
-        &__icon {
+        .icon__set {
           position: absolute;
           right: 10px;
           top: 13px;
-        }
-        .form-box__icon {
-          .input {
-          display: none;
+          .form__icon {
+          }
+          .hidden {
+            display: none;
           }
         }
       }
-      &__send-btn {
-        .btn {
-          height: 50px;
-          font-size: 16px;
-          color: #fff;
-          border: none;
-          background-color: #38aef0;
-          padding: 0px 30px;
-          margin-left: 15px;
-        }
+      .btn {
+        height: 50px;
+        font-size: 16px;
+        color: #fff;
+        border: none;
+        background-color: #38aef0;
+        padding: 0px 30px;
+        margin-left: 15px;
       }
     }
   }
