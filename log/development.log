@@ -24701,3 +24701,431 @@ Processing by MessagesController#index as HTML
 Completed 200 OK in 100ms (Views: 65.6ms | ActiveRecord: 30.0ms | Allocations: 22390)
 
 
+Started GET "/groups/new" for ::1 at 2020-08-26 21:52:19 +0900
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/new.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/groups/_form.html.haml:17
+  Rendered groups/_form.html.haml (Duration: 11.7ms | Allocations: 9902)
+  Rendered groups/new.html.haml within layouts/application (Duration: 16.8ms | Allocations: 13464)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 1.4ms | Allocations: 1714)
+Completed 200 OK in 1258ms (Views: 1184.8ms | ActiveRecord: 9.1ms | Allocations: 1471081)
+
+
+Started POST "/groups" for ::1 at 2020-08-26 21:52:35 +0900
+Processing by GroupsController#create as HTML
+  Parameters: {"authenticity_token"=>"cZ0bZEDG6FpfAJvGCzCnqogSRc/KxWsqCb+ErS9oFezixkUFTg5DNex2VXK4Vc9NWdCYluHfpHmoxzsmHATTlg==", "group"=>{"name"=>"テスト", "user_ids"=>["", "1", "2"]}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` IN (1, 2)[0m
+  ↳ app/controllers/groups_controller.rb:12:in `create'
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :name attribute in User model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from create at /Users/mitsuhirochikazawa/projects/chat-space/app/controllers/groups_controller.rb:13)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`name` = BINARY 'chikazawa' AND `users`.`id` != 1 LIMIT 1[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :name attribute in User model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from create at /Users/mitsuhirochikazawa/projects/chat-space/app/controllers/groups_controller.rb:13)
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`name` = BINARY 'PW:email integer1' AND `users`.`id` != 2 LIMIT 1[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :name attribute in Group model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from create at /Users/mitsuhirochikazawa/projects/chat-space/app/controllers/groups_controller.rb:13)
+  [1m[36mGroup Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `groups` WHERE `groups`.`name` = BINARY 'テスト' LIMIT 1[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+  [1m[36mGroup Create (0.3ms)[0m  [1m[32mINSERT INTO `groups` (`name`, `created_at`, `updated_at`) VALUES ('テスト', '2020-08-26 12:52:35.472309', '2020-08-26 12:52:35.472309')[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+  [1m[36mGroupUser Create (0.3ms)[0m  [1m[32mINSERT INTO `group_users` (`group_id`, `user_id`, `created_at`, `updated_at`) VALUES (6, 1, '2020-08-26 12:52:35.474733', '2020-08-26 12:52:35.474733')[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+  [1m[36mGroupUser Create (0.3ms)[0m  [1m[32mINSERT INTO `group_users` (`group_id`, `user_id`, `created_at`, `updated_at`) VALUES (6, 2, '2020-08-26 12:52:35.476382', '2020-08-26 12:52:35.476382')[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 61ms (ActiveRecord: 4.2ms | Allocations: 14138)
+
+
+Started GET "/" for ::1 at 2020-08-26 21:52:35 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 39.7ms | Allocations: 20637)
+  Rendered groups/index.html.haml within layouts/application (Duration: 42.2ms | Allocations: 22537)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 39)
+Completed 200 OK in 55ms (Views: 45.8ms | ActiveRecord: 6.8ms | Allocations: 35982)
+
+
+Started GET "/users/1/edit" for ::1 at 2020-08-26 21:52:38 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (Duration: 8.7ms | Allocations: 5105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 23)
+Completed 200 OK in 34ms (Views: 28.8ms | ActiveRecord: 0.4ms | Allocations: 19062)
+
+
+Started GET "/" for ::1 at 2020-08-26 21:52:40 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (3.2ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 25.4ms | Allocations: 6615)
+  Rendered groups/index.html.haml within layouts/application (Duration: 25.8ms | Allocations: 6703)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.2ms | Allocations: 22)
+Completed 200 OK in 59ms (Views: 41.4ms | ActiveRecord: 10.8ms | Allocations: 20074)
+
+
+Started GET "/users/1/edit" for ::1 at 2020-08-26 21:52:43 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (Duration: 4.5ms | Allocations: 767)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.2ms | Allocations: 23)
+Completed 200 OK in 38ms (Views: 29.5ms | ActiveRecord: 1.5ms | Allocations: 14138)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2020-08-26 21:52:44 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"HPFbYTX+WwrC7sjzEGJJd2IAPYxsk4u5P10js63sH+EdtLt9MNAFHSeK52idOgz3UrqV9gMMGHR066wlwtk5jw=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 0.4ms | Allocations: 3032)
+
+
+Started GET "/" for ::1 at 2020-08-26 21:52:44 +0900
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms | Allocations: 316)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-08-26 21:52:44 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (Duration: 2.5ms | Allocations: 1894)
+  Rendered devise/sessions/new.html.haml within layouts/application (Duration: 12.7ms | Allocations: 7223)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 39)
+Completed 200 OK in 32ms (Views: 29.7ms | ActiveRecord: 0.0ms | Allocations: 20380)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-08-26 21:52:47 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (Duration: 0.6ms | Allocations: 143)
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_new_html_haml___4015168906813316141_70152079352880 at /Users/mitsuhirochikazawa/projects/chat-space/app/views/devise/registrations/new.html.haml:8)
+  Rendered devise/registrations/new.html.haml within layouts/application (Duration: 11.0ms | Allocations: 7358)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.0ms | Allocations: 20156)
+
+
+Started POST "/users" for ::1 at 2020-08-26 21:53:27 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"9SjDRcav94m3sTEoYTTT2u0foJrqr0IUxmBzhzAd89tKfo4v3QLvwi2JF2F9n+oh7O1yT3vIrAdHC5pYbsib0Q==", "user"=>{"name"=>"PW:email integer３", "email"=>"hhh789@gannbaruzo", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'hhh789@gannbaruzo' LIMIT 1[0m
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :name attribute in User model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from block in build_relation at /Users/mitsuhirochikazawa/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-6.0.3.2/lib/active_record/validations/uniqueness.rb:64)
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`name` = BINARY 'PW:email integer３' LIMIT 1[0m
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('PW:email integer３', 'hhh789@gannbaruzo', '$2a$12$IddeNEH4diZDtO3ix4jrWu/BVl/bibvAQefs4UuFa4Xegb.QCMMXi', '2020-08-26 12:53:27.840495', '2020-08-26 12:53:27.840495')[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 289ms (ActiveRecord: 3.2ms | Allocations: 12910)
+
+
+Started GET "/" for ::1 at 2020-08-26 21:53:27 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  Rendered messages/_side_bar.html.haml (Duration: 2.4ms | Allocations: 1270)
+  Rendered groups/index.html.haml within layouts/application (Duration: 2.6ms | Allocations: 1357)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 39)
+Completed 200 OK in 16ms (Views: 13.0ms | ActiveRecord: 1.0ms | Allocations: 14751)
+
+
+Started GET "/users/4/edit" for ::1 at 2020-08-26 21:53:32 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (Duration: 4.0ms | Allocations: 777)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 23)
+Completed 200 OK in 31ms (Views: 23.9ms | ActiveRecord: 1.0ms | Allocations: 14149)
+
+
+Started GET "/groups/new" for ::1 at 2020-08-26 21:53:36 +0900
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/new.html.haml within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/groups/_form.html.haml:17
+  Rendered groups/_form.html.haml (Duration: 9.3ms | Allocations: 1793)
+  Rendered groups/new.html.haml within layouts/application (Duration: 10.0ms | Allocations: 1878)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 38ms (Views: 26.3ms | ActiveRecord: 2.9ms | Allocations: 15799)
+
+
+Started POST "/groups" for ::1 at 2020-08-26 21:53:51 +0900
+Processing by GroupsController#create as HTML
+  Parameters: {"authenticity_token"=>"PVtg+JsvLdV6lGKSrJFtzPAk5HbugTsgRzuT+P9wpmKkTCJYfJn8MhAQt2rqT8v9fKEhb0krHPQrM8/5IgTaIg==", "group"=>{"name"=>"test", "user_ids"=>["", "2", "3", "4"]}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` IN (2, 3, 4)[0m
+  ↳ app/controllers/groups_controller.rb:12:in `create'
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :name attribute in User model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from create at /Users/mitsuhirochikazawa/projects/chat-space/app/controllers/groups_controller.rb:13)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`name` = BINARY 'PW:email integer1' AND `users`.`id` != 2 LIMIT 1[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :name attribute in User model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from create at /Users/mitsuhirochikazawa/projects/chat-space/app/controllers/groups_controller.rb:13)
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`name` = BINARY 'PW:email integer2' AND `users`.`id` != 3 LIMIT 1[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :name attribute in User model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from create at /Users/mitsuhirochikazawa/projects/chat-space/app/controllers/groups_controller.rb:13)
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`name` = BINARY 'PW:email integer３' AND `users`.`id` != 4 LIMIT 1[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :name attribute in Group model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from create at /Users/mitsuhirochikazawa/projects/chat-space/app/controllers/groups_controller.rb:13)
+  [1m[36mGroup Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM `groups` WHERE `groups`.`name` = BINARY 'test' LIMIT 1[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+  [1m[36mGroup Create (0.4ms)[0m  [1m[32mINSERT INTO `groups` (`name`, `created_at`, `updated_at`) VALUES ('test', '2020-08-26 12:53:51.305284', '2020-08-26 12:53:51.305284')[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+  [1m[36mGroupUser Create (0.4ms)[0m  [1m[32mINSERT INTO `group_users` (`group_id`, `user_id`, `created_at`, `updated_at`) VALUES (7, 2, '2020-08-26 12:53:51.308556', '2020-08-26 12:53:51.308556')[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+  [1m[36mGroupUser Create (0.4ms)[0m  [1m[32mINSERT INTO `group_users` (`group_id`, `user_id`, `created_at`, `updated_at`) VALUES (7, 3, '2020-08-26 12:53:51.312555', '2020-08-26 12:53:51.312555')[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+  [1m[36mGroupUser Create (0.3ms)[0m  [1m[32mINSERT INTO `group_users` (`group_id`, `user_id`, `created_at`, `updated_at`) VALUES (7, 4, '2020-08-26 12:53:51.315643', '2020-08-26 12:53:51.315643')[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 44ms (ActiveRecord: 6.0ms | Allocations: 16471)
+
+
+Started GET "/" for ::1 at 2020-08-26 21:53:51 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 6.5ms | Allocations: 2320)
+  Rendered groups/index.html.haml within layouts/application (Duration: 6.9ms | Allocations: 2407)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 39)
+Completed 200 OK in 45ms (Views: 40.6ms | ActiveRecord: 1.6ms | Allocations: 15796)
+
+
+Started GET "/groups/7/messages" for ::1 at 2020-08-26 21:53:53 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"7"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:28:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 6.5ms | Allocations: 2329)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 7[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 3)
+  Rendered messages/_main_chat.html.haml (Duration: 14.0ms | Allocations: 7876)
+  Rendered messages/index.html.haml within layouts/application (Duration: 24.0ms | Allocations: 12175)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 50ms (Views: 39.8ms | ActiveRecord: 3.2ms | Allocations: 27109)
+
+
+Started POST "/groups/7/messages" for ::1 at 2020-08-26 21:54:01 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"hq3dcCmlYWkmt5CIsp8gWxgWQOJAY2mSbI7EaX7Hu+tjWuP93bCCT6CkrMhnPGtE+ZDE63pi98a/+wCIqkfczw==", "message"=>{"body"=>"test"}, "commit"=>"Send", "group_id"=>"7"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:28:in `set_group'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/messages_controller.rb:12:in `create'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:12:in `create'
+  [1m[36mMessage Create (0.4ms)[0m  [1m[32mINSERT INTO `messages` (`body`, `group_id`, `user_id`, `created_at`, `updated_at`) VALUES ('test', 7, 4, '2020-08-26 12:54:01.539937', '2020-08-26 12:54:01.539937')[0m
+  ↳ app/controllers/messages_controller.rb:12:in `create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/messages_controller.rb:12:in `create'
+Redirected to http://localhost:3000/groups/7/messages
+Completed 302 Found in 21ms (ActiveRecord: 2.9ms | Allocations: 7485)
+
+
+Started GET "/groups/7/messages" for ::1 at 2020-08-26 21:54:01 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"7"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:28:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 5.8ms | Allocations: 2343)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 7[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [1 times] (Duration: 2.8ms | Allocations: 3286)
+  Rendered messages/_main_chat.html.haml (Duration: 13.3ms | Allocations: 7370)
+  Rendered messages/index.html.haml within layouts/application (Duration: 19.6ms | Allocations: 9866)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.2ms | Allocations: 39)
+Completed 200 OK in 36ms (Views: 28.4ms | ActiveRecord: 3.2ms | Allocations: 23937)
+
+
+Started GET "/groups/7/edit" for ::1 at 2020-08-26 21:54:05 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/groups_controller.rb:23:in `edit'
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/groups/_form.html.haml:17
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `users`.`id` FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 7[0m
+  ↳ app/views/groups/_form.html.haml:17
+  Rendered groups/_form.html.haml (Duration: 9.3ms | Allocations: 2944)
+  Rendered groups/edit.html.haml within layouts/application (Duration: 14.5ms | Allocations: 4778)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 44ms (Views: 33.2ms | ActiveRecord: 2.8ms | Allocations: 18769)
+
+
+Started PATCH "/groups/7" for ::1 at 2020-08-26 21:54:09 +0900
+Processing by GroupsController#update as HTML
+  Parameters: {"authenticity_token"=>"5ujL74y/S6e1Ku7SsOyWIK9E1XhuUxX1E7iX7okceZZzXx8gg7NJ97yf5I29vtXskVpDunKfPN+0hpHjDw8bLg==", "group"=>{"name"=>"test", "user_ids"=>["", "1", "2", "3", "4"]}, "commit"=>"更新する", "id"=>"7"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.9ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/groups_controller.rb:28:in `update'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/groups_controller.rb:29:in `update'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` IN (1, 2, 3, 4)[0m
+  ↳ app/controllers/groups_controller.rb:29:in `update'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 7[0m
+  ↳ app/controllers/groups_controller.rb:29:in `update'
+  [1m[36mGroupUser Create (0.4ms)[0m  [1m[32mINSERT INTO `group_users` (`group_id`, `user_id`, `created_at`, `updated_at`) VALUES (7, 1, '2020-08-26 12:54:09.913828', '2020-08-26 12:54:09.913828')[0m
+  ↳ app/controllers/groups_controller.rb:29:in `update'
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :name attribute in Group model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from update at /Users/mitsuhirochikazawa/projects/chat-space/app/controllers/groups_controller.rb:29)
+  [1m[36mGroup Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM `groups` WHERE `groups`.`name` = BINARY 'test' AND `groups`.`id` != 7 LIMIT 1[0m
+  ↳ app/controllers/groups_controller.rb:29:in `update'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/groups_controller.rb:29:in `update'
+Redirected to http://localhost:3000/groups/7/messages
+Completed 302 Found in 25ms (ActiveRecord: 4.0ms | Allocations: 9312)
+
+
+Started GET "/groups/7/messages" for ::1 at 2020-08-26 21:54:09 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"7"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:28:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 6.2ms | Allocations: 2348)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 7[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [1 times] (Duration: 0.3ms | Allocations: 66)
+  Rendered messages/_main_chat.html.haml (Duration: 10.4ms | Allocations: 3777)
+  Rendered messages/index.html.haml within layouts/application (Duration: 17.2ms | Allocations: 6275)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 39)
+Completed 200 OK in 36ms (Views: 25.3ms | ActiveRecord: 3.5ms | Allocations: 20453)
+
+
+Started POST "/groups/7/messages" for ::1 at 2020-08-26 21:54:32 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"9qYOaMcQH22VJlTf0i8lIKUetsmUx6loNadFw8YdXTnbsATgg5w5OSoegvdf9LGz1wDuyyC0lKXcefwpjOdRRg==", "message"=>{"body"=>"ttt", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f9b12ae1280 @tempfile=#<Tempfile:/var/folders/7x/7k1jnyws1qlgrn93vfx9dnxc0000gn/T/RackMultipart20200826-1416-1fz9iqr.png>, @original_filename="Railsの処理の流れ_0409.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"message[image]\"; filename=\"Rails\xE3\x81\xAE\xE5\x87\xA6\xE7\x90\x86\xE3\x81\xAE\xE6\xB5\x81\xE3\x82\x8C_0409.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Send", "group_id"=>"7"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:28:in `set_group'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/messages_controller.rb:12:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:12:in `create'
+  [1m[36mMessage Create (0.3ms)[0m  [1m[32mINSERT INTO `messages` (`body`, `image`, `group_id`, `user_id`, `created_at`, `updated_at`) VALUES ('ttt', 'Railsの処理の流れ_0409.png', 7, 4, '2020-08-26 12:54:33.004296', '2020-08-26 12:54:33.004296')[0m
+  ↳ app/controllers/messages_controller.rb:12:in `create'
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/messages_controller.rb:12:in `create'
+Redirected to http://localhost:3000/groups/7/messages
+Completed 302 Found in 580ms (ActiveRecord: 5.3ms | Allocations: 7625)
+
+
+Started GET "/groups/7/messages" for ::1 at 2020-08-26 21:54:33 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"7"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:28:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 6.0ms | Allocations: 2341)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 7[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [2 times] (Duration: 0.7ms | Allocations: 305)
+  Rendered messages/_main_chat.html.haml (Duration: 7.0ms | Allocations: 4031)
+  Rendered messages/index.html.haml within layouts/application (Duration: 13.4ms | Allocations: 6522)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 39)
+Completed 200 OK in 29ms (Views: 22.2ms | ActiveRecord: 2.8ms | Allocations: 20715)
+
+
