@@ -25847,3 +25847,1877 @@ Processing by GroupsController#index as HTML
 Completed 200 OK in 22ms (Views: 17.5ms | ActiveRecord: 1.5ms | Allocations: 16443)
 
 
+Started GET "/" for ::1 at 2020-09-09 14:31:01 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 6.8ms | Allocations: 2340)
+  Rendered groups/index.html.haml within layouts/application (Duration: 7.2ms | Allocations: 2427)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 46ms (Views: 39.6ms | ActiveRecord: 1.8ms | Allocations: 16438)
+
+
+Started GET "/" for ::1 at 2020-09-09 14:31:03 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 8.6ms | Allocations: 2340)
+  Rendered groups/index.html.haml within layouts/application (Duration: 8.9ms | Allocations: 2427)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 36ms (Views: 29.7ms | ActiveRecord: 1.8ms | Allocations: 16451)
+
+
+Started GET "/" for ::1 at 2020-09-09 14:31:03 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 5.7ms | Allocations: 2340)
+  Rendered groups/index.html.haml within layouts/application (Duration: 6.0ms | Allocations: 2427)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 24ms (Views: 19.5ms | ActiveRecord: 1.6ms | Allocations: 16443)
+
+
+Started GET "/" for ::1 at 2020-09-09 14:31:04 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 7.8ms | Allocations: 2340)
+  Rendered groups/index.html.haml within layouts/application (Duration: 8.1ms | Allocations: 2427)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 34ms (Views: 24.9ms | ActiveRecord: 4.6ms | Allocations: 16449)
+
+
+Started GET "/" for ::1 at 2020-09-09 14:34:02 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (23.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (3.0ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (2.0ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 14.4ms | Allocations: 2340)
+  Rendered groups/index.html.haml within layouts/application (Duration: 14.8ms | Allocations: 2427)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.2ms | Allocations: 22)
+Completed 200 OK in 73ms (Views: 39.3ms | ActiveRecord: 28.7ms | Allocations: 16437)
+
+
+Started GET "/" for ::1 at 2020-09-09 14:34:44 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (16.1ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 25.8ms | Allocations: 6296)
+  Rendered groups/index.html.haml within layouts/application (Duration: 28.5ms | Allocations: 8177)
+Completed 500 Internal Server Error in 71ms (ActiveRecord: 17.4ms | Allocations: 29460)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.):
+     6:     = csrf_meta_tags
+     7:     = csp_meta_tag
+     8:     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+     9:     = javascript_include_tag 'application' 
+    10:     -# = javascript_pack_tag 'application'
+    11:     -# = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    12:   %body
+  
+app/views/layouts/application.html.haml:9
+Started GET "/" for ::1 at 2020-09-09 14:41:55 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (14.1ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 29.2ms | Allocations: 6296)
+  Rendered groups/index.html.haml within layouts/application (Duration: 34.5ms | Allocations: 8183)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 6.4ms | Allocations: 1694)
+Completed 200 OK in 89ms (Views: 68.4ms | ActiveRecord: 14.9ms | Allocations: 27350)
+
+
+Started GET "/" for ::1 at 2020-09-09 14:45:39 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (25.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 45.8ms | Allocations: 6287)
+  Rendered groups/index.html.haml within layouts/application (Duration: 49.8ms | Allocations: 8166)
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 26.6ms | Allocations: 29439)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.):
+     6:     = csrf_meta_tags
+     7:     = csp_meta_tag
+     8:     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+     9:     = javascript_include_tag 'application' 
+    10:     -# = javascript_pack_tag 'application'
+    11:     -# = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    12:   %body
+  
+app/views/layouts/application.html.haml:9
+Started GET "/" for ::1 at 2020-09-09 14:58:12 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (4.7ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 19.0ms | Allocations: 6296)
+  Rendered groups/index.html.haml within layouts/application (Duration: 25.8ms | Allocations: 8183)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 3.0ms | Allocations: 1696)
+Completed 200 OK in 79ms (Views: 65.1ms | ActiveRecord: 6.4ms | Allocations: 27348)
+
+
+Started GET "/users/4/edit" for ::1 at 2020-09-09 15:20:56 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (Duration: 185.7ms | Allocations: 200595)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 23)
+Completed 200 OK in 209ms (Views: 202.8ms | ActiveRecord: 0.5ms | Allocations: 215189)
+
+
+Started GET "/" for ::1 at 2020-09-09 15:20:59 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (1.0ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 4[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 8.9ms | Allocations: 2348)
+  Rendered groups/index.html.haml within layouts/application (Duration: 9.5ms | Allocations: 2435)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.2ms | Allocations: 22)
+Completed 200 OK in 44ms (Views: 35.3ms | ActiveRecord: 2.1ms | Allocations: 16451)
+
+
+Started GET "/groups/new" for ::1 at 2020-09-09 15:21:02 +0900
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (7.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/new.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/groups/_form.html.haml:17
+  Rendered groups/_form.html.haml (Duration: 16.5ms | Allocations: 7033)
+  Rendered groups/new.html.haml within layouts/application (Duration: 20.5ms | Allocations: 8947)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 63ms (Views: 35.7ms | ActiveRecord: 8.7ms | Allocations: 27502)
+
+
+Started GET "/users/4/edit" for ::1 at 2020-09-09 15:21:05 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (Duration: 3.8ms | Allocations: 777)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.5ms | Allocations: 23)
+Completed 200 OK in 34ms (Views: 24.4ms | ActiveRecord: 1.3ms | Allocations: 14776)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2020-09-09 15:21:08 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"i+sOQPSujCofO4zrCRkKpMSEx0JST8OOyeJomgDBR1Om/QTIsCKqfqADWsOEwp43tpqfQOY8/kMgPNFwSjtLLA=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 0.6ms | Allocations: 3410)
+
+
+Started GET "/" for ::1 at 2020-09-09 15:21:08 +0900
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms | Allocations: 585)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-09-09 15:21:08 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (Duration: 2.7ms | Allocations: 1894)
+  Rendered devise/sessions/new.html.haml within layouts/application (Duration: 10.0ms | Allocations: 7227)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.3ms | Allocations: 39)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 0.0ms | Allocations: 21008)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-09-09 15:21:19 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"mzOq3YRZ9LWuntXVLfXib6VX5OTDEz4YWb6okdzoiRY3FNuaWtYDusqfqI205YttAY68R/WDYzXKDC0T1RROTQ==", "user"=>{"email"=>"k67e5b9fd7zh2@softbank.ne.jp", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'k67e5b9fd7zh2@softbank.ne.jp' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 305ms (ActiveRecord: 4.6ms | Allocations: 4770)
+
+
+Started GET "/" for ::1 at 2020-09-09 15:21:19 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 12.9ms | Allocations: 7691)
+  Rendered groups/index.html.haml within layouts/application (Duration: 13.2ms | Allocations: 7778)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 39)
+Completed 200 OK in 27ms (Views: 21.1ms | ActiveRecord: 3.2ms | Allocations: 21812)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:21:22 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 21.4ms | Allocations: 7693)
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (7.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [3 times] (Duration: 5.6ms | Allocations: 3264)
+  Rendered messages/_main_chat.html.haml (Duration: 42.1ms | Allocations: 13373)
+  Rendered messages/index.html.haml within layouts/application (Duration: 67.6ms | Allocations: 23026)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 96ms (Views: 72.2ms | ActiveRecord: 16.5ms | Allocations: 38589)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:26:30 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 16.2ms | Allocations: 7689)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [3 times] (Duration: 0.3ms | Allocations: 186)
+  Rendered messages/_main_chat.html.haml (Duration: 10.4ms | Allocations: 3915)
+  Rendered messages/index.html.haml within layouts/application (Duration: 27.2ms | Allocations: 11754)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 54ms (Views: 41.6ms | ActiveRecord: 6.3ms | Allocations: 26533)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:26:36 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (14.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 40.5ms | Allocations: 7685)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [3 times] (Duration: 0.9ms | Allocations: 186)
+  Rendered messages/_main_chat.html.haml (Duration: 14.0ms | Allocations: 3913)
+  Rendered messages/index.html.haml within layouts/application (Duration: 55.3ms | Allocations: 11748)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.2ms | Allocations: 22)
+Completed 200 OK in 78ms (Views: 50.2ms | ActiveRecord: 20.7ms | Allocations: 26540)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:26:38 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.8ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (14.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 39.2ms | Allocations: 7685)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [3 times] (Duration: 0.5ms | Allocations: 186)
+  Rendered messages/_main_chat.html.haml (Duration: 11.4ms | Allocations: 3912)
+  Rendered messages/index.html.haml within layouts/application (Duration: 51.4ms | Allocations: 11747)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 73ms (Views: 45.7ms | ActiveRecord: 20.5ms | Allocations: 26549)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:27:11 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.8ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 22.9ms | Allocations: 7686)
+  [1m[36mUser Load (14.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [3 times] (Duration: 0.7ms | Allocations: 186)
+  Rendered messages/_main_chat.html.haml (Duration: 24.9ms | Allocations: 3912)
+  Rendered messages/index.html.haml within layouts/application (Duration: 48.6ms | Allocations: 11748)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.2ms | Allocations: 22)
+Completed 200 OK in 78ms (Views: 50.1ms | ActiveRecord: 19.5ms | Allocations: 26546)
+
+
+Started POST "/groups/1/messages" for ::1 at 2020-09-09 15:27:15 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"cvdYZBjBL2e10YZZ1xUEFZ0Z9N1wlqwSW6ROQdWgMdHxwsOhk2uM08krZeSb//pwvyqFwpWAUnacLYHantIqNg==", "message"=>{"body"=>"test"}, "commit"=>"Send", "group_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+  [1m[36mUser Load (14.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+  [1m[36mMessage Create (9.0ms)[0m  [1m[32mINSERT INTO `messages` (`body`, `group_id`, `user_id`, `created_at`, `updated_at`) VALUES ('test', 1, 1, '2020-09-09 06:27:15.764234', '2020-09-09 06:27:15.764234')[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+Redirected to http://localhost:3000/groups/1/messages
+Completed 302 Found in 47ms (ActiveRecord: 29.8ms | Allocations: 7244)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:27:15 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (14.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (1.9ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (12.9ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 45.5ms | Allocations: 7685)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [4 times] (Duration: 0.6ms | Allocations: 246)
+  Rendered messages/_main_chat.html.haml (Duration: 8.5ms | Allocations: 3993)
+  Rendered messages/index.html.haml within layouts/application (Duration: 54.6ms | Allocations: 11828)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 39)
+Completed 200 OK in 89ms (Views: 48.3ms | ActiveRecord: 33.6ms | Allocations: 26652)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:27:22 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 26.8ms | Allocations: 7685)
+  [1m[36mUser Load (13.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [4 times] (Duration: 0.5ms | Allocations: 246)
+  Rendered messages/_main_chat.html.haml (Duration: 25.3ms | Allocations: 3994)
+  Rendered messages/index.html.haml within layouts/application (Duration: 52.9ms | Allocations: 11829)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 77ms (Views: 51.5ms | ActiveRecord: 19.9ms | Allocations: 26611)
+
+
+Started POST "/groups/1/messages" for ::1 at 2020-09-09 15:27:29 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"0E1/+DpcBrqd8JsJ9jBS87ua8PLZHj6FhtbeG9hmYIBTeOQ9sfalDuEKeLS62qyWmamB7TwIwOFBXxGAkxR7Zw==", "message"=>{"body"=>"test2"}, "commit"=>"Send", "group_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (17.1ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+  [1m[36mMessage Create (1.9ms)[0m  [1m[32mINSERT INTO `messages` (`body`, `group_id`, `user_id`, `created_at`, `updated_at`) VALUES ('test2', 1, 1, '2020-09-09 06:27:29.125670', '2020-09-09 06:27:29.125670')[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+Redirected to http://localhost:3000/groups/1/messages
+Completed 302 Found in 41ms (ActiveRecord: 21.5ms | Allocations: 6736)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:27:29 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (16.8ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.8ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (2.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (8.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 53.3ms | Allocations: 7685)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [5 times] (Duration: 0.5ms | Allocations: 306)
+  Rendered messages/_main_chat.html.haml (Duration: 8.7ms | Allocations: 4075)
+  Rendered messages/index.html.haml within layouts/application (Duration: 62.7ms | Allocations: 11910)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 39)
+Completed 200 OK in 97ms (Views: 58.8ms | ActiveRecord: 32.5ms | Allocations: 26734)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:27:32 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (1.8ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (16.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 43.4ms | Allocations: 7686)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [5 times] (Duration: 0.6ms | Allocations: 306)
+  Rendered messages/_main_chat.html.haml (Duration: 10.3ms | Allocations: 4075)
+  Rendered messages/index.html.haml within layouts/application (Duration: 54.4ms | Allocations: 11911)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 81ms (Views: 50.3ms | ActiveRecord: 23.4ms | Allocations: 26685)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:28:38 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (16.9ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 40.1ms | Allocations: 7685)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [5 times] (Duration: 1.1ms | Allocations: 306)
+  Rendered messages/_main_chat.html.haml (Duration: 12.5ms | Allocations: 4073)
+  Rendered messages/index.html.haml within layouts/application (Duration: 53.2ms | Allocations: 11908)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 77ms (Views: 47.8ms | ActiveRecord: 22.5ms | Allocations: 26705)
+
+
+Started POST "/groups/1/messages" for ::1 at 2020-09-09 15:28:52 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"C4bUt2dp17Rbbzdz/CXVSNF5XrKL8h5ImJXJwNBw2kWIs09y7MN0ACeV1M6wzyst80ovrW7k4CxfHAZbmwLBog==", "message"=>{"body"=>"test3"}, "commit"=>"Send", "group_id"=>"1"}
+  [1m[36mUser Load (18.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.8ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO `messages` (`body`, `group_id`, `user_id`, `created_at`, `updated_at`) VALUES ('test3', 1, 1, '2020-09-09 06:28:52.633697', '2020-09-09 06:28:52.633697')[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+Redirected to http://localhost:3000/groups/1/messages
+Completed 302 Found in 43ms (ActiveRecord: 21.7ms | Allocations: 6727)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:28:52 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (16.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (1.8ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 30.4ms | Allocations: 7685)
+  [1m[36mUser Load (13.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [6 times] (Duration: 29.5ms | Allocations: 366)
+  Rendered messages/_main_chat.html.haml (Duration: 56.1ms | Allocations: 4156)
+  Rendered messages/index.html.haml within layouts/application (Duration: 87.7ms | Allocations: 11991)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 39)
+Completed 200 OK in 122ms (Views: 78.5ms | ActiveRecord: 36.3ms | Allocations: 26821)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:29:06 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 23.7ms | Allocations: 7686)
+  [1m[36mUser Load (16.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [6 times] (Duration: 0.9ms | Allocations: 366)
+  Rendered messages/_main_chat.html.haml (Duration: 31.8ms | Allocations: 4153)
+  Rendered messages/index.html.haml within layouts/application (Duration: 56.1ms | Allocations: 11989)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 80ms (Views: 52.0ms | ActiveRecord: 21.8ms | Allocations: 26781)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:30:39 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 25.2ms | Allocations: 7685)
+  [1m[36mUser Load (13.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [6 times] (Duration: 0.9ms | Allocations: 366)
+  Rendered messages/_main_chat.html.haml (Duration: 29.2ms | Allocations: 4153)
+  Rendered messages/index.html.haml within layouts/application (Duration: 55.0ms | Allocations: 11988)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 81ms (Views: 54.0ms | ActiveRecord: 19.9ms | Allocations: 26788)
+
+
+Started POST "/groups/1/messages" for ::1 at 2020-09-09 15:30:45 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"RwSBkZZWwip/OWXQPV0p4YeqpsqdsOEGDnFX5d2u9/7EMRpUHfxhngPDhm1xt9eEpZnX1XimH2LJ+Jh+ltzsGQ==", "message"=>{"body"=>"test4"}, "commit"=>"Send", "group_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  [1m[35m (11.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+  [1m[36mMessage Create (0.6ms)[0m  [1m[32mINSERT INTO `messages` (`body`, `group_id`, `user_id`, `created_at`, `updated_at`) VALUES ('test4', 1, 1, '2020-09-09 06:30:45.473684', '2020-09-09 06:30:45.473684')[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+Redirected to http://localhost:3000/groups/1/messages
+Completed 302 Found in 34ms (ActiveRecord: 15.0ms | Allocations: 6733)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:30:45 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (14.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (9.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (14.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 73.1ms | Allocations: 7685)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [7 times] (Duration: 0.8ms | Allocations: 426)
+  Rendered messages/_main_chat.html.haml (Duration: 11.2ms | Allocations: 4233)
+  Rendered messages/index.html.haml within layouts/application (Duration: 85.2ms | Allocations: 12068)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 39)
+Completed 200 OK in 106ms (Views: 56.7ms | ActiveRecord: 42.9ms | Allocations: 26898)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:30:48 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.8ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 22.6ms | Allocations: 7685)
+  [1m[36mUser Load (13.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (1.9ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [7 times] (Duration: 1.2ms | Allocations: 426)
+  Rendered messages/_main_chat.html.haml (Duration: 29.3ms | Allocations: 4233)
+  Rendered messages/index.html.haml within layouts/application (Duration: 52.9ms | Allocations: 12068)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 87ms (Views: 57.9ms | ActiveRecord: 21.0ms | Allocations: 26850)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:33:50 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (12.2ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.8ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 22.5ms | Allocations: 7684)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [3 times] (Duration: 0.5ms | Allocations: 186)
+  Rendered messages/_main_chat.html.haml (Duration: 11.0ms | Allocations: 3912)
+  Rendered messages/index.html.haml within layouts/application (Duration: 34.5ms | Allocations: 11746)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.2ms | Allocations: 22)
+Completed 200 OK in 77ms (Views: 51.1ms | ActiveRecord: 18.1ms | Allocations: 26542)
+
+
+Started POST "/groups/1/messages" for ::1 at 2020-09-09 15:34:02 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"/qZxjTLZdwOO41yCptW3qlN+MYBpLJg68Dpuv0pooNd9k+pIuXPUt/IZvz/qP0nPcU1An4w6Zl43s6EkARq7MA==", "message"=>{"body"=>"test"}, "commit"=>"Send", "group_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (11.8ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO `messages` (`body`, `group_id`, `user_id`, `created_at`, `updated_at`) VALUES ('test', 1, 1, '2020-09-09 06:34:02.728236', '2020-09-09 06:34:02.728236')[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+Redirected to http://localhost:3000/groups/1/messages
+Completed 302 Found in 31ms (ActiveRecord: 14.1ms | Allocations: 6735)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:34:02 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.9ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (12.9ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 33.6ms | Allocations: 7684)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [4 times] (Duration: 0.7ms | Allocations: 246)
+  Rendered messages/_main_chat.html.haml (Duration: 10.7ms | Allocations: 3993)
+  Rendered messages/index.html.haml within layouts/application (Duration: 45.1ms | Allocations: 11827)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 39)
+Completed 200 OK in 89ms (Views: 63.9ms | ActiveRecord: 19.2ms | Allocations: 26643)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:34:56 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (12.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 36.1ms | Allocations: 7684)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [4 times] (Duration: 0.8ms | Allocations: 246)
+  Rendered messages/_main_chat.html.haml (Duration: 13.7ms | Allocations: 3993)
+  Rendered messages/index.html.haml within layouts/application (Duration: 50.5ms | Allocations: 11827)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 76ms (Views: 51.2ms | ActiveRecord: 18.0ms | Allocations: 26607)
+
+
+Started POST "/groups/1/messages" for ::1 at 2020-09-09 15:35:06 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"q4BIDvCuL4xQp80denekPqE17p3i7G1m0woRruRbOLYotdPLewSMOCxdLqA2nVpbgwafggf6kwIUg941rykjUQ==", "message"=>{"body"=>"test2"}, "commit"=>"Send", "group_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+  [1m[36mMessage Create (0.4ms)[0m  [1m[32mINSERT INTO `messages` (`body`, `group_id`, `user_id`, `created_at`, `updated_at`) VALUES ('test2', 1, 1, '2020-09-09 06:35:06.202899', '2020-09-09 06:35:06.202899')[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+Redirected to http://localhost:3000/groups/1/messages
+Completed 302 Found in 19ms (ActiveRecord: 2.7ms | Allocations: 6740)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:35:06 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 15.3ms | Allocations: 7684)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [5 times] (Duration: 0.4ms | Allocations: 306)
+  Rendered messages/_main_chat.html.haml (Duration: 6.5ms | Allocations: 4073)
+  Rendered messages/index.html.haml within layouts/application (Duration: 22.2ms | Allocations: 11907)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 39)
+Completed 200 OK in 37ms (Views: 29.0ms | ActiveRecord: 4.9ms | Allocations: 26737)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:36:04 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (12.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 38.3ms | Allocations: 7641)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [2 times] (Duration: 0.4ms | Allocations: 126)
+  Rendered messages/_main_chat.html.haml (Duration: 10.4ms | Allocations: 3831)
+  Rendered messages/index.html.haml within layouts/application (Duration: 49.5ms | Allocations: 11622)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 77ms (Views: 52.2ms | ActiveRecord: 18.3ms | Allocations: 26404)
+
+
+Started POST "/groups/1/messages" for ::1 at 2020-09-09 15:36:16 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"bvr7AXTPRAiWk3V751REhhB53R/N3Uuxx964IS83dNvtz2DE/2XnvOpplsarvrrjMkqsACjLtdUAV3e6ZEVvPA==", "message"=>{"body"=>"test3"}, "commit"=>"Send", "group_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+  [1m[36mMessage Create (0.4ms)[0m  [1m[32mINSERT INTO `messages` (`body`, `group_id`, `user_id`, `created_at`, `updated_at`) VALUES ('test3', 1, 1, '2020-09-09 06:36:16.091861', '2020-09-09 06:36:16.091861')[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+Redirected to http://localhost:3000/groups/1/messages
+Completed 302 Found in 20ms (ActiveRecord: 3.4ms | Allocations: 6749)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:36:16 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.8ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 22.5ms | Allocations: 7641)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (11.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [3 times] (Duration: 0.6ms | Allocations: 186)
+  Rendered messages/_main_chat.html.haml (Duration: 22.7ms | Allocations: 3911)
+  Rendered messages/index.html.haml within layouts/application (Duration: 45.9ms | Allocations: 11702)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.2ms | Allocations: 39)
+Completed 200 OK in 96ms (Views: 71.6ms | ActiveRecord: 17.3ms | Allocations: 26528)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:45:19 +0900
+  [1m[35m (2.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (24.1ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (1.8ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (6.8ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 57.7ms | Allocations: 7641)
+  [1m[36mUser Load (26.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (2.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [3 times] (Duration: 0.4ms | Allocations: 186)
+  Rendered messages/_main_chat.html.haml (Duration: 41.2ms | Allocations: 3911)
+  Rendered messages/index.html.haml within layouts/application (Duration: 99.6ms | Allocations: 11702)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.2ms | Allocations: 22)
+Completed 200 OK in 151ms (Views: 80.3ms | ActiveRecord: 65.1ms | Allocations: 26491)
+
+
+Started POST "/groups/1/messages" for ::1 at 2020-09-09 15:45:32 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"Tvps9f99XvgNQraSkyWemW31sRMtkJFay9rbSSfNQdPNz/cwdNf9THG4VS/fz2D8T8bADMiGbz4MUxTSbL9aNA==", "message"=>{"body"=>"test4"}, "commit"=>"Send", "group_id"=>"1"}
+  [1m[36mUser Load (42.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+  [1m[36mMessage Create (2.5ms)[0m  [1m[32mINSERT INTO `messages` (`body`, `group_id`, `user_id`, `created_at`, `updated_at`) VALUES ('test4', 1, 1, '2020-09-09 06:45:32.186560', '2020-09-09 06:45:32.186560')[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+Redirected to http://localhost:3000/groups/1/messages
+Completed 302 Found in 67ms (ActiveRecord: 48.6ms | Allocations: 6749)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:45:32 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.9ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (57.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (15.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (1.8ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 109.4ms | Allocations: 7641)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (24.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [4 times] (Duration: 0.7ms | Allocations: 246)
+  Rendered messages/_main_chat.html.haml (Duration: 34.8ms | Allocations: 3992)
+  Rendered messages/index.html.haml within layouts/application (Duration: 145.6ms | Allocations: 11783)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 39)
+Completed 200 OK in 184ms (Views: 73.9ms | ActiveRecord: 103.9ms | Allocations: 26609)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:51:56 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (1.1ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (1.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (24.8ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 48.2ms | Allocations: 7641)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [4 times] (Duration: 0.9ms | Allocations: 246)
+  Rendered messages/_main_chat.html.haml (Duration: 14.9ms | Allocations: 3992)
+  Rendered messages/index.html.haml within layouts/application (Duration: 63.9ms | Allocations: 11783)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mitsuhirochikazawa/projects/chat-space/public/packs
+[Webpacker] Hash: 5493c67e4646677a75b6
+Version: webpack 4.44.0
+Time: 4597ms
+Built at: 2020/09/09 15:52:07
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e2dda39f3acb116bee06.js    124 KiB  application  [emitted] [immutable]  application
+js/application-e2dda39f3acb116bee06.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e2dda39f3acb116bee06.js js/application-e2dda39f3acb116bee06.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/message.js] 115 bytes {application} [built]
+[./app/javascript/packs/application.js] 773 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layouts/_notifications.html.haml (Duration: 0.2ms | Allocations: 22)
+Completed 200 OK in 11243ms (Views: 11203.7ms | ActiveRecord: 32.5ms | Allocations: 27798)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:54:35 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (2.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (23.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (2.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (25.9ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (2.1ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 86.6ms | Allocations: 7641)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [4 times] (Duration: 0.8ms | Allocations: 246)
+  Rendered messages/_main_chat.html.haml (Duration: 17.5ms | Allocations: 3992)
+  Rendered messages/index.html.haml within layouts/application (Duration: 105.0ms | Allocations: 11783)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 161ms (Views: 88.7ms | ActiveRecord: 62.2ms | Allocations: 26589)
+
+
+Started POST "/groups/1/messages" for ::1 at 2020-09-09 15:54:56 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"4kE1Df3GfzhjvNRXxvrxQQZTTjJB14jsNZnkZ7wJRBhhdK7IdmzcjB9GN+qKEA8kJGA/LaTBdojyECv893tf/w==", "message"=>{"body"=>"test5"}, "commit"=>"Send", "group_id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (24.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+  [1m[36mMessage Create (0.3ms)[0m  [1m[32mINSERT INTO `messages` (`body`, `group_id`, `user_id`, `created_at`, `updated_at`) VALUES ('test5', 1, 1, '2020-09-09 06:54:56.290778', '2020-09-09 06:54:56.290778')[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/messages_controller.rb:11:in `create'
+Redirected to http://localhost:3000/groups/1/messages
+Completed 302 Found in 45ms (ActiveRecord: 28.6ms | Allocations: 6742)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:54:56 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (24.8ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (4.8ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (2.0ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (3.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 99.6ms | Allocations: 7643)
+  [1m[36mUser Load (27.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [5 times] (Duration: 0.5ms | Allocations: 306)
+  Rendered messages/_main_chat.html.haml (Duration: 39.8ms | Allocations: 4072)
+  Rendered messages/index.html.haml within layouts/application (Duration: 140.8ms | Allocations: 11865)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.2ms | Allocations: 39)
+Completed 200 OK in 165ms (Views: 94.9ms | ActiveRecord: 65.9ms | Allocations: 26699)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:55:38 +0900
+  [1m[35m (1.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (25.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (22.0ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 81.5ms | Allocations: 17566)
+  [1m[36mUser Load (22.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [5 times] (Duration: 10.7ms | Allocations: 3391)
+  Rendered messages/_main_chat.html.haml (Duration: 84.9ms | Allocations: 15147)
+  Rendered messages/index.html.haml within layouts/application (Duration: 207.4ms | Allocations: 36453)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 3.5ms | Allocations: 1713)
+Completed 200 OK in 3605ms (Views: 3315.0ms | ActiveRecord: 96.2ms | Allocations: 1491342)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:58:30 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (25.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 48.0ms | Allocations: 11597)
+  [1m[36mUser Load (19.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [5 times] (Duration: 3.9ms | Allocations: 3374)
+  Rendered messages/_main_chat.html.haml (Duration: 52.5ms | Allocations: 11942)
+  Rendered messages/index.html.haml within layouts/application (Duration: 104.4ms | Allocations: 25690)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 3.4ms | Allocations: 1694)
+Completed 200 OK in 136ms (Views: 79.8ms | ActiveRecord: 49.7ms | Allocations: 45693)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:58:31 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (23.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 43.9ms | Allocations: 7649)
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [5 times] (Duration: 0.4ms | Allocations: 306)
+  Rendered messages/_main_chat.html.haml (Duration: 10.8ms | Allocations: 4079)
+  Rendered messages/index.html.haml within layouts/application (Duration: 55.3ms | Allocations: 11879)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 79ms (Views: 42.1ms | ActiveRecord: 30.9ms | Allocations: 26718)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:58:31 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 15.0ms | Allocations: 7641)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (24.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [5 times] (Duration: 0.5ms | Allocations: 306)
+  Rendered messages/_main_chat.html.haml (Duration: 32.7ms | Allocations: 4072)
+  Rendered messages/index.html.haml within layouts/application (Duration: 48.1ms | Allocations: 11863)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 68ms (Views: 35.1ms | ActiveRecord: 29.1ms | Allocations: 26676)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:58:32 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (2.2ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (25.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 45.9ms | Allocations: 7641)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [5 times] (Duration: 1.1ms | Allocations: 306)
+  Rendered messages/_main_chat.html.haml (Duration: 13.0ms | Allocations: 4072)
+  Rendered messages/index.html.haml within layouts/application (Duration: 59.5ms | Allocations: 11863)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 86ms (Views: 42.6ms | ActiveRecord: 34.8ms | Allocations: 26690)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:58:32 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (23.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 46.0ms | Allocations: 7641)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [5 times] (Duration: 0.5ms | Allocations: 306)
+  Rendered messages/_main_chat.html.haml (Duration: 8.6ms | Allocations: 4072)
+  Rendered messages/index.html.haml within layouts/application (Duration: 55.2ms | Allocations: 11863)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 96ms (Views: 62.3ms | ActiveRecord: 29.0ms | Allocations: 26672)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:58:32 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (1.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (24.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 52.8ms | Allocations: 7642)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [5 times] (Duration: 0.6ms | Allocations: 306)
+  Rendered messages/_main_chat.html.haml (Duration: 10.2ms | Allocations: 4072)
+  Rendered messages/index.html.haml within layouts/application (Duration: 63.6ms | Allocations: 11864)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.2ms | Allocations: 22)
+Completed 200 OK in 88ms (Views: 51.8ms | ActiveRecord: 30.3ms | Allocations: 26661)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 15:58:43 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (24.2ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (1.1ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (25.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 49.0ms | Allocations: 7641)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [5 times] (Duration: 0.5ms | Allocations: 306)
+  Rendered messages/_main_chat.html.haml (Duration: 10.8ms | Allocations: 4074)
+  Rendered messages/index.html.haml within layouts/application (Duration: 60.3ms | Allocations: 11866)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.2ms | Allocations: 22)
+Completed 200 OK in 120ms (Views: 57.0ms | ActiveRecord: 56.7ms | Allocations: 26693)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 16:00:19 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (24.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 46.0ms | Allocations: 7641)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [5 times] (Duration: 0.7ms | Allocations: 306)
+  Rendered messages/_main_chat.html.haml (Duration: 9.2ms | Allocations: 4072)
+  Rendered messages/index.html.haml within layouts/application (Duration: 55.8ms | Allocations: 11863)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mitsuhirochikazawa/projects/chat-space/public/packs
+[Webpacker] Hash: 5493c67e4646677a75b6
+Version: webpack 4.44.0
+Time: 2189ms
+Built at: 2020/09/09 16:00:25
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e2dda39f3acb116bee06.js    124 KiB  application  [emitted] [immutable]  application
+js/application-e2dda39f3acb116bee06.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e2dda39f3acb116bee06.js js/application-e2dda39f3acb116bee06.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/message.js] 115 bytes {application} [built]
+[./app/javascript/packs/application.js] 773 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layouts/_notifications.html.haml (Duration: 0.2ms | Allocations: 22)
+Completed 200 OK in 6328ms (Views: 6289.9ms | ActiveRecord: 31.9ms | Allocations: 27868)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 16:08:18 +0900
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (24.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (24.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 64.0ms | Allocations: 17552)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [5 times] (Duration: 5.0ms | Allocations: 3391)
+  Rendered messages/_main_chat.html.haml (Duration: 30.2ms | Allocations: 15147)
+  Rendered messages/index.html.haml within layouts/application (Duration: 100.8ms | Allocations: 36435)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mitsuhirochikazawa/projects/chat-space/public/packs
+[Webpacker] Hash: c1a46f2016085601798d
+Version: webpack 4.44.0
+Time: 18069ms
+Built at: 2020/09/09 16:08:43
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-5792de9a4b386cc65a19.js    843 KiB  application  [emitted] [immutable]  application
+js/application-5792de9a4b386cc65a19.js.map    898 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-5792de9a4b386cc65a19.js js/application-5792de9a4b386cc65a19.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/message.js] 115 bytes {application} [built]
+[./app/javascript/packs/application.js] 814 bytes {application} [built]
+[./app/javascript/test.js] 0 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layouts/_notifications.html.haml (Duration: 6.7ms | Allocations: 1713)
+Completed 200 OK in 25202ms (Views: 25061.9ms | ActiveRecord: 74.9ms | Allocations: 1501885)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 16:09:40 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (1.2ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (3.8ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (23.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (1.8ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (1.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (28.8ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 92.0ms | Allocations: 7649)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [5 times] (Duration: 2.4ms | Allocations: 306)
+  Rendered messages/_main_chat.html.haml (Duration: 16.4ms | Allocations: 4079)
+  Rendered messages/index.html.haml within layouts/application (Duration: 109.4ms | Allocations: 11879)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mitsuhirochikazawa/projects/chat-space/public/packs
+[Webpacker] Hash: c31196d2e5a3080b2787
+Version: webpack 4.44.0
+Time: 7353ms
+Built at: 2020/09/09 16:09:54
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-3c468d94a27e8bf21bdf.js    843 KiB  application  [emitted] [immutable]  application
+js/application-3c468d94a27e8bf21bdf.js.map    898 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-3c468d94a27e8bf21bdf.js js/application-3c468d94a27e8bf21bdf.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/message.js] 115 bytes {application} [built]
+[./app/javascript/packs/application.js] 793 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+  Rendered layouts/_notifications.html.haml (Duration: 0.2ms | Allocations: 22)
+Completed 200 OK in 14499ms (Views: 14424.9ms | ActiveRecord: 64.3ms | Allocations: 27892)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-09 16:27:59 +0900
+  [1m[35m (3.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.8ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (3.8ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 30.3ms | Allocations: 11597)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [5 times] (Duration: 5.1ms | Allocations: 3371)
+  Rendered messages/_main_chat.html.haml (Duration: 16.4ms | Allocations: 11931)
+  Rendered messages/index.html.haml within layouts/application (Duration: 53.9ms | Allocations: 25684)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration.entry should be an non-empty object.
+   -> Multiple entry bundles are created. The key is the chunk name. The value can be a string or an array.
+
+  Rendered layouts/_notifications.html.haml (Duration: 2.8ms | Allocations: 1694)
+Completed 200 OK in 2173ms (Views: 2152.6ms | ActiveRecord: 9.0ms | Allocations: 46643)
+
+
