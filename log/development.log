@@ -32513,3 +32513,1985 @@ Processing by MessagesController#create as JSON
 Completed 200 OK in 450ms (Views: 0.8ms | ActiveRecord: 2.7ms | Allocations: 8212)
 
 
+Started GET "/" for ::1 at 2020-09-10 13:01:04 +0900
+  [1m[35m (14.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (8.8ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 82.9ms | Allocations: 31543)
+  Rendered groups/index.html.haml within layouts/application (Duration: 87.9ms | Allocations: 35034)
+[Webpacker] Compiling...
+Started GET "/" for ::1 at 2020-09-10 13:01:09 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (11.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (2.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 35.2ms | Allocations: 7648)
+  Rendered groups/index.html.haml within layouts/application (Duration: 35.6ms | Allocations: 7736)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mitsuhirochikazawa/projects/chat-space/public/packs
+[Webpacker] Hash: 90351d8f30ef56a7bfa8
+Version: webpack 4.44.0
+Time: 1885ms
+Built at: 2020/09/10 13:01:09
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-27a6b93a22686aa1b19b.js    483 KiB  application  [emitted] [immutable]  application
+js/application-27a6b93a22686aa1b19b.js.map    475 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-27a6b93a22686aa1b19b.js js/application-27a6b93a22686aa1b19b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/message.js] 1.86 KiB {application} [built]
+[./app/javascript/packs/application.js] 965 bytes {application} [built]
+[./app/javascript/users.js] 148 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 109 hidden modules
+
+  Rendered layouts/_notifications.html.haml (Duration: 2.1ms | Allocations: 1713)
+Completed 200 OK in 5476ms (Views: 5418.0ms | ActiveRecord: 33.6ms | Allocations: 1515623)
+
+
+[Webpacker] Compiled all packs in /Users/mitsuhirochikazawa/projects/chat-space/public/packs
+[Webpacker] Hash: 90351d8f30ef56a7bfa8
+Version: webpack 4.44.0
+Time: 1064ms
+Built at: 2020/09/10 13:01:11
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-27a6b93a22686aa1b19b.js    483 KiB  application  [emitted] [immutable]  application
+js/application-27a6b93a22686aa1b19b.js.map    475 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-27a6b93a22686aa1b19b.js js/application-27a6b93a22686aa1b19b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/message.js] 1.86 KiB {application} [built]
+[./app/javascript/packs/application.js] 965 bytes {application} [built]
+[./app/javascript/users.js] 148 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 109 hidden modules
+
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 2590ms (Views: 2568.6ms | ActiveRecord: 17.1ms | Allocations: 27070)
+
+
+Started GET "/users/1/edit" for ::1 at 2020-09-10 13:01:15 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (Duration: 289.8ms | Allocations: 200598)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 23)
+Completed 200 OK in 311ms (Views: 303.5ms | ActiveRecord: 1.9ms | Allocations: 215290)
+
+
+Started GET "/groups/new" for ::1 at 2020-09-10 13:01:18 +0900
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/_form.html.haml (Duration: 12.2ms | Allocations: 7644)
+  Rendered groups/new.html.haml within layouts/application (Duration: 17.0ms | Allocations: 9563)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 68ms (Views: 35.7ms | ActiveRecord: 12.0ms | Allocations: 28215)
+
+
+Started GET "/groups/new" for ::1 at 2020-09-10 13:06:19 +0900
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/_form.html.haml (Duration: 2.2ms | Allocations: 773)
+  Rendered groups/new.html.haml within layouts/application (Duration: 2.6ms | Allocations: 858)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mitsuhirochikazawa/projects/chat-space/public/packs
+[Webpacker] Hash: 783b82e9ebd24841ccb7
+Version: webpack 4.44.0
+Time: 1107ms
+Built at: 2020/09/10 13:06:21
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-5be68d70cae5e2090d8d.js    483 KiB  application  [emitted] [immutable]  application
+js/application-5be68d70cae5e2090d8d.js.map    476 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-5be68d70cae5e2090d8d.js js/application-5be68d70cae5e2090d8d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/message.js] 1.86 KiB {application} [built]
+[./app/javascript/packs/application.js] 965 bytes {application} [built]
+[./app/javascript/users.js] 381 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 109 hidden modules
+
+  Rendered layouts/_notifications.html.haml (Duration: 0.2ms | Allocations: 22)
+Completed 200 OK in 2493ms (Views: 2451.6ms | ActiveRecord: 14.6ms | Allocations: 34369)
+
+
+Started GET "/users?keyword=m" for ::1 at 2020-09-10 13:06:27 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"m"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Started GET "/users?keyword=mi" for ::1 at 2020-09-10 13:06:28 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"mi"}
+  [1m[36mUser Load (10.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Started GET "/groups/new" for ::1 at 2020-09-10 13:08:09 +0900
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%mi%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 5.5ms | Allocations: 836)
+Completed 200 OK in 117085ms (Views: 12.7ms | ActiveRecord: 11.0ms | Allocations: 21474)
+
+
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%m%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 3.7ms | Allocations: 904)
+Completed 200 OK in 143595ms (Views: 4.2ms | ActiveRecord: 1.3ms | Allocations: 39485)
+
+
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/_form.html.haml (Duration: 2.1ms | Allocations: 773)
+  Rendered groups/new.html.haml within layouts/application (Duration: 2.5ms | Allocations: 858)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 47ms (Views: 14.1ms | ActiveRecord: 9.8ms | Allocations: 32839)
+
+
+Started GET "/groups/new" for ::1 at 2020-09-10 13:09:02 +0900
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/_form.html.haml (Duration: 181.4ms | Allocations: 203293)
+  Rendered groups/new.html.haml within layouts/application (Duration: 187.1ms | Allocations: 206855)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 3.4ms | Allocations: 1714)
+Completed 200 OK in 1457ms (Views: 1367.8ms | ActiveRecord: 28.7ms | Allocations: 1670307)
+
+
+Started GET "/users?keyword=t" for ::1 at 2020-09-10 13:59:44 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"t"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%t%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 4.7ms | Allocations: 996)
+Completed 200 OK in 17ms (Views: 11.4ms | ActiveRecord: 1.0ms | Allocations: 4875)
+
+
+Started GET "/users?keyword=te" for ::1 at 2020-09-10 13:59:46 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"te"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%te%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.6ms | Allocations: 900)
+Completed 200 OK in 9ms (Views: 2.7ms | ActiveRecord: 1.3ms | Allocations: 3297)
+
+
+Started GET "/users?keyword=tes" for ::1 at 2020-09-10 13:59:47 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"tes"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%tes%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.3ms | Allocations: 744)
+Completed 200 OK in 8ms (Views: 2.6ms | ActiveRecord: 1.0ms | Allocations: 3142)
+
+
+Started GET "/users?keyword=te" for ::1 at 2020-09-10 13:59:49 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"te"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%te%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.4ms | Allocations: 899)
+Completed 200 OK in 8ms (Views: 2.6ms | ActiveRecord: 1.1ms | Allocations: 3283)
+
+
+Started GET "/users?keyword=t" for ::1 at 2020-09-10 13:59:49 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"t"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%t%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.2ms | Allocations: 899)
+Completed 200 OK in 8ms (Views: 2.3ms | ActiveRecord: 1.4ms | Allocations: 3267)
+
+
+Started GET "/users?keyword=" for ::1 at 2020-09-10 13:59:49 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>""}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  Rendered users/index.json.jbuilder (Duration: 0.1ms | Allocations: 20)
+Completed 200 OK in 7ms (Views: 1.0ms | ActiveRecord: 0.6ms | Allocations: 2452)
+
+
+Started GET "/users?keyword=P" for ::1 at 2020-09-10 14:00:37 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"P"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%P%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.2ms | Allocations: 899)
+Completed 200 OK in 7ms (Views: 2.4ms | ActiveRecord: 0.9ms | Allocations: 3282)
+
+
+Started GET "/users?keyword=PW" for ::1 at 2020-09-10 14:00:40 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.4ms | Allocations: 899)
+Completed 200 OK in 8ms (Views: 2.5ms | ActiveRecord: 1.2ms | Allocations: 3271)
+
+
+Started GET "/users?keyword=PW" for ::1 at 2020-09-10 14:00:40 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 3.1ms | Allocations: 899)
+Completed 200 OK in 11ms (Views: 3.4ms | ActiveRecord: 1.3ms | Allocations: 3271)
+
+
+Started GET "/groups/new" for ::1 at 2020-09-10 14:00:43 +0900
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/_form.html.haml (Duration: 4.0ms | Allocations: 718)
+  Rendered groups/new.html.haml within layouts/application (Duration: 4.8ms | Allocations: 803)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mitsuhirochikazawa/projects/chat-space/public/packs
+[Webpacker] Hash: 74044eeed94ea0a5ace6
+Version: webpack 4.44.0
+Time: 1507ms
+Built at: 2020/09/10 14:00:47
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f5c4efde2afa819b59b0.js    484 KiB  application  [emitted] [immutable]  application
+js/application-f5c4efde2afa819b59b0.js.map    477 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f5c4efde2afa819b59b0.js js/application-f5c4efde2afa819b59b0.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/message.js] 1.86 KiB {application} [built]
+[./app/javascript/packs/application.js] 965 bytes {application} [built]
+[./app/javascript/users.js] 1.35 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 109 hidden modules
+
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 3933ms (Views: 3924.1ms | ActiveRecord: 0.6ms | Allocations: 16657)
+
+
+Started GET "/users?keyword=P" for ::1 at 2020-09-10 14:00:49 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"P"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%P%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.9ms | Allocations: 899)
+Completed 200 OK in 8ms (Views: 3.2ms | ActiveRecord: 1.1ms | Allocations: 3282)
+
+
+Started GET "/users?keyword=PA" for ::1 at 2020-09-10 14:00:49 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PA"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PA%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.1ms | Allocations: 740)
+Completed 200 OK in 8ms (Views: 2.1ms | ActiveRecord: 1.4ms | Allocations: 3130)
+
+
+Started GET "/users?keyword=PA" for ::1 at 2020-09-10 14:00:50 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PA"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PA%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 1.9ms | Allocations: 740)
+Completed 200 OK in 7ms (Views: 2.1ms | ActiveRecord: 1.0ms | Allocations: 3114)
+
+
+Started GET "/users?keyword=P" for ::1 at 2020-09-10 14:00:51 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"P"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%P%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.8ms | Allocations: 899)
+Completed 200 OK in 9ms (Views: 3.0ms | ActiveRecord: 1.1ms | Allocations: 3281)
+
+
+Started GET "/users?keyword=PW" for ::1 at 2020-09-10 14:00:53 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.9ms | Allocations: 899)
+Completed 200 OK in 9ms (Views: 3.0ms | ActiveRecord: 1.1ms | Allocations: 3285)
+
+
+Started GET "/users?keyword=PW" for ::1 at 2020-09-10 14:00:54 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.8ms | Allocations: 899)
+Completed 200 OK in 9ms (Views: 2.9ms | ActiveRecord: 1.1ms | Allocations: 3285)
+
+
+Started GET "/users?keyword=PW%3A" for ::1 at 2020-09-10 14:00:55 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.4ms | Allocations: 899)
+Completed 200 OK in 8ms (Views: 2.5ms | ActiveRecord: 1.2ms | Allocations: 3265)
+
+
+Started GET "/users?keyword=PW%3Ae" for ::1 at 2020-09-10 14:00:57 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:e"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:e%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.2ms | Allocations: 899)
+Completed 200 OK in 8ms (Views: 2.3ms | ActiveRecord: 1.3ms | Allocations: 3279)
+
+
+Started GET "/users?keyword=PW%3Aem" for ::1 at 2020-09-10 14:00:57 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:em"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:em%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.2ms | Allocations: 899)
+Completed 200 OK in 11ms (Views: 2.4ms | ActiveRecord: 1.3ms | Allocations: 3281)
+
+
+Started GET "/users?keyword=PW%3Aema" for ::1 at 2020-09-10 14:00:57 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:ema"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:ema%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 3.0ms | Allocations: 899)
+Completed 200 OK in 9ms (Views: 3.2ms | ActiveRecord: 1.2ms | Allocations: 3281)
+
+
+Started GET "/users?keyword=PW%3Aemai" for ::1 at 2020-09-10 14:00:57 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:emai"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:emai%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.3ms | Allocations: 899)
+Completed 200 OK in 8ms (Views: 2.5ms | ActiveRecord: 1.2ms | Allocations: 3287)
+
+
+Started GET "/users?keyword=PW%3Aemail" for ::1 at 2020-09-10 14:00:58 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:email"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:email%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 3.1ms | Allocations: 899)
+Completed 200 OK in 9ms (Views: 3.2ms | ActiveRecord: 1.2ms | Allocations: 3269)
+
+
+Started GET "/users?keyword=PW%3Aemail%20" for ::1 at 2020-09-10 14:00:59 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:email "}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:email %') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.3ms | Allocations: 899)
+Completed 200 OK in 8ms (Views: 2.5ms | ActiveRecord: 1.1ms | Allocations: 3289)
+
+
+Started GET "/users?keyword=PW%3Aemail%20i" for ::1 at 2020-09-10 14:00:59 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:email i"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:email i%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.3ms | Allocations: 900)
+Completed 200 OK in 8ms (Views: 2.5ms | ActiveRecord: 1.2ms | Allocations: 3270)
+
+
+Started GET "/users?keyword=PW%3Aemail%20in" for ::1 at 2020-09-10 14:00:59 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:email in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:email in%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.6ms | Allocations: 900)
+Completed 200 OK in 9ms (Views: 2.8ms | ActiveRecord: 1.1ms | Allocations: 3288)
+
+
+Started GET "/users?keyword=PW%3Aemail%20int" for ::1 at 2020-09-10 14:01:00 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:email int"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:email int%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.9ms | Allocations: 900)
+Completed 200 OK in 9ms (Views: 3.2ms | ActiveRecord: 1.2ms | Allocations: 3270)
+
+
+Started GET "/users?keyword=PW%3Aemail%20inte" for ::1 at 2020-09-10 14:01:00 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:email inte"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:email inte%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.7ms | Allocations: 900)
+Completed 200 OK in 8ms (Views: 2.8ms | ActiveRecord: 1.2ms | Allocations: 3274)
+
+
+Started GET "/users?keyword=PW%3Aemail%20integ" for ::1 at 2020-09-10 14:01:00 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:email integ"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:email integ%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.8ms | Allocations: 900)
+Completed 200 OK in 9ms (Views: 2.9ms | ActiveRecord: 1.2ms | Allocations: 3278)
+
+
+Started GET "/users?keyword=PW%3Aemail%20intege" for ::1 at 2020-09-10 14:01:01 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:email intege"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:email intege%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.4ms | Allocations: 900)
+Completed 200 OK in 8ms (Views: 2.6ms | ActiveRecord: 1.0ms | Allocations: 3274)
+
+
+Started GET "/users?keyword=PW%3Aemail%20integer" for ::1 at 2020-09-10 14:01:01 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:email integer"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:email integer%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.3ms | Allocations: 900)
+Completed 200 OK in 8ms (Views: 2.6ms | ActiveRecord: 1.1ms | Allocations: 3286)
+
+
+Started GET "/users?keyword=PW%3Aemail%20integer1" for ::1 at 2020-09-10 14:01:02 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:email integer1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:email integer1%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.5ms | Allocations: 794)
+Completed 200 OK in 8ms (Views: 2.4ms | ActiveRecord: 1.5ms | Allocations: 3180)
+
+
+Started GET "/users?keyword=PW%3Aemail%20integer" for ::1 at 2020-09-10 14:01:03 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:email integer"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:email integer%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.2ms | Allocations: 900)
+Completed 200 OK in 8ms (Views: 2.3ms | ActiveRecord: 1.0ms | Allocations: 3278)
+
+
+Started GET "/users?keyword=PW%3Aemail%20intege" for ::1 at 2020-09-10 14:01:05 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:email intege"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:email intege%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.5ms | Allocations: 900)
+Completed 200 OK in 8ms (Views: 2.6ms | ActiveRecord: 1.1ms | Allocations: 3292)
+
+
+Started GET "/users?keyword=PW%3Aemail%20integ" for ::1 at 2020-09-10 14:01:05 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:email integ"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:email integ%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.4ms | Allocations: 900)
+Completed 200 OK in 8ms (Views: 2.6ms | ActiveRecord: 1.0ms | Allocations: 3288)
+
+
+Started GET "/users?keyword=PW%3Aemail%20inte" for ::1 at 2020-09-10 14:01:05 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:email inte"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:email inte%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.4ms | Allocations: 900)
+Completed 200 OK in 8ms (Views: 2.7ms | ActiveRecord: 1.0ms | Allocations: 3274)
+
+
+Started GET "/users?keyword=PW%3Aemail%20int" for ::1 at 2020-09-10 14:01:05 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:email int"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:email int%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.8ms | Allocations: 900)
+Completed 200 OK in 9ms (Views: 2.9ms | ActiveRecord: 1.1ms | Allocations: 3286)
+
+
+Started GET "/users?keyword=PW%3Aemail%20in" for ::1 at 2020-09-10 14:01:06 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:email in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:email in%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.7ms | Allocations: 900)
+Completed 200 OK in 9ms (Views: 2.9ms | ActiveRecord: 1.2ms | Allocations: 3280)
+
+
+Started GET "/users?keyword=PW%3Aemail%20i" for ::1 at 2020-09-10 14:01:06 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:email i"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:email i%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.5ms | Allocations: 900)
+Completed 200 OK in 8ms (Views: 2.7ms | ActiveRecord: 1.1ms | Allocations: 3290)
+
+
+Started GET "/users?keyword=PW%3Aemail%20" for ::1 at 2020-09-10 14:01:06 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:email "}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:email %') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.2ms | Allocations: 899)
+Completed 200 OK in 8ms (Views: 2.4ms | ActiveRecord: 1.0ms | Allocations: 3275)
+
+
+Started GET "/users?keyword=PW%3Aemail" for ::1 at 2020-09-10 14:01:06 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:email"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:email%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.9ms | Allocations: 899)
+Completed 200 OK in 9ms (Views: 3.1ms | ActiveRecord: 1.1ms | Allocations: 3283)
+
+
+Started GET "/users?keyword=PW%3Aemai" for ::1 at 2020-09-10 14:01:06 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:emai"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:emai%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.6ms | Allocations: 899)
+Completed 200 OK in 9ms (Views: 2.8ms | ActiveRecord: 1.1ms | Allocations: 3275)
+
+
+Started GET "/users?keyword=PW%3Aema" for ::1 at 2020-09-10 14:01:06 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:ema"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:ema%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.9ms | Allocations: 899)
+Completed 200 OK in 8ms (Views: 3.0ms | ActiveRecord: 1.1ms | Allocations: 3283)
+
+
+Started GET "/users?keyword=PW%3Aem" for ::1 at 2020-09-10 14:01:07 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:em"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:em%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.4ms | Allocations: 899)
+Completed 200 OK in 8ms (Views: 2.7ms | ActiveRecord: 1.0ms | Allocations: 3271)
+
+
+Started GET "/users?keyword=PW%3Ae" for ::1 at 2020-09-10 14:01:07 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:e"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:e%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.4ms | Allocations: 899)
+Completed 200 OK in 8ms (Views: 2.6ms | ActiveRecord: 1.0ms | Allocations: 3265)
+
+
+Started GET "/users?keyword=PW%3A" for ::1 at 2020-09-10 14:01:07 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW:"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW:%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.8ms | Allocations: 899)
+Completed 200 OK in 11ms (Views: 3.2ms | ActiveRecord: 1.1ms | Allocations: 3281)
+
+
+Started GET "/users?keyword=PW" for ::1 at 2020-09-10 14:01:07 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"PW"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%PW%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.8ms | Allocations: 899)
+Completed 200 OK in 9ms (Views: 2.9ms | ActiveRecord: 1.3ms | Allocations: 3277)
+
+
+Started GET "/users?keyword=P" for ::1 at 2020-09-10 14:01:08 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"P"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%P%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.1ms | Allocations: 899)
+Completed 200 OK in 8ms (Views: 2.3ms | ActiveRecord: 1.2ms | Allocations: 3285)
+
+
+Started GET "/users?keyword=" for ::1 at 2020-09-10 14:01:08 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>""}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  Rendered users/index.json.jbuilder (Duration: 0.1ms | Allocations: 19)
+Completed 200 OK in 46ms (Views: 0.7ms | ActiveRecord: 0.5ms | Allocations: 2287)
+
+
+Started GET "/users?keyword=o" for ::1 at 2020-09-10 14:01:09 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"o"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%o%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 4.2ms | Allocations: 740)
+Completed 200 OK in 11ms (Views: 4.4ms | ActiveRecord: 1.7ms | Allocations: 3121)
+
+
+Started GET "/users?keyword=" for ::1 at 2020-09-10 14:01:10 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>""}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  Rendered users/index.json.jbuilder (Duration: 0.1ms | Allocations: 19)
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 0.5ms | Allocations: 2282)
+
+
+Started GET "/users?keyword=f" for ::1 at 2020-09-10 14:01:11 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"f"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%f%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.0ms | Allocations: 740)
+Completed 200 OK in 8ms (Views: 2.3ms | ActiveRecord: 1.1ms | Allocations: 3121)
+
+
+Started GET "/users?keyword=fj" for ::1 at 2020-09-10 14:01:11 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"fj"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%fj%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.4ms | Allocations: 740)
+Completed 200 OK in 8ms (Views: 2.6ms | ActiveRecord: 1.1ms | Allocations: 3120)
+
+
+Started GET "/users?keyword=fjre" for ::1 at 2020-09-10 14:01:12 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"fjre"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%fjre%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.5ms | Allocations: 740)
+Completed 200 OK in 8ms (Views: 2.6ms | ActiveRecord: 1.2ms | Allocations: 3122)
+
+
+Started GET "/users?keyword=fjre" for ::1 at 2020-09-10 14:01:12 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"fjre"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%fjre%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.0ms | Allocations: 740)
+Completed 200 OK in 7ms (Views: 2.1ms | ActiveRecord: 1.1ms | Allocations: 3114)
+
+
+Started GET "/users?keyword=fjrejv" for ::1 at 2020-09-10 14:01:12 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"fjrejv"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%fjrejv%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.5ms | Allocations: 740)
+Completed 200 OK in 8ms (Views: 2.6ms | ActiveRecord: 1.5ms | Allocations: 3130)
+
+
+Started GET "/users?keyword=fjrejv" for ::1 at 2020-09-10 14:01:12 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"fjrejv"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%fjrejv%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.0ms | Allocations: 740)
+Completed 200 OK in 7ms (Views: 2.1ms | ActiveRecord: 1.0ms | Allocations: 3116)
+
+
+Started GET "/users?keyword=fjrej" for ::1 at 2020-09-10 14:01:13 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"fjrej"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%fjrej%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.4ms | Allocations: 740)
+Completed 200 OK in 8ms (Views: 2.6ms | ActiveRecord: 1.2ms | Allocations: 3118)
+
+
+Started GET "/users?keyword=fjre" for ::1 at 2020-09-10 14:01:13 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"fjre"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%fjre%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.3ms | Allocations: 740)
+Completed 200 OK in 8ms (Views: 2.4ms | ActiveRecord: 1.1ms | Allocations: 3118)
+
+
+Started GET "/users?keyword=fjr" for ::1 at 2020-09-10 14:01:13 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"fjr"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%fjr%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.0ms | Allocations: 740)
+Completed 200 OK in 8ms (Views: 2.2ms | ActiveRecord: 1.2ms | Allocations: 3120)
+
+
+Started GET "/users?keyword=fj" for ::1 at 2020-09-10 14:01:13 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"fj"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%fj%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.1ms | Allocations: 740)
+Completed 200 OK in 7ms (Views: 2.2ms | ActiveRecord: 1.1ms | Allocations: 3134)
+
+
+Started GET "/users?keyword=f" for ::1 at 2020-09-10 14:01:14 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"f"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%f%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.1ms | Allocations: 740)
+Completed 200 OK in 7ms (Views: 2.1ms | ActiveRecord: 1.0ms | Allocations: 3122)
+
+
+Started GET "/users?keyword=fp" for ::1 at 2020-09-10 14:01:14 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"fp"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%fp%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.4ms | Allocations: 740)
+Completed 200 OK in 8ms (Views: 2.8ms | ActiveRecord: 1.2ms | Allocations: 3124)
+
+
+Started GET "/users?keyword=f" for ::1 at 2020-09-10 14:01:15 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"f"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%f%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 1.7ms | Allocations: 740)
+Completed 200 OK in 7ms (Views: 2.0ms | ActiveRecord: 1.1ms | Allocations: 3126)
+
+
+Started GET "/users?keyword=" for ::1 at 2020-09-10 14:01:15 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>""}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  Rendered users/index.json.jbuilder (Duration: 0.1ms | Allocations: 19)
+Completed 200 OK in 6ms (Views: 1.0ms | ActiveRecord: 0.6ms | Allocations: 2276)
+
+
+Started GET "/users?keyword=p" for ::1 at 2020-09-10 14:01:16 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"p"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%p%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.6ms | Allocations: 899)
+Completed 200 OK in 8ms (Views: 2.8ms | ActiveRecord: 1.1ms | Allocations: 3272)
+
+
+Started GET "/users?keyword=pk" for ::1 at 2020-09-10 14:01:18 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"pk"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%pk%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.0ms | Allocations: 740)
+Completed 200 OK in 8ms (Views: 2.0ms | ActiveRecord: 1.2ms | Allocations: 3126)
+
+
+Started GET "/users?keyword=p" for ::1 at 2020-09-10 14:01:19 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"p"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%p%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.8ms | Allocations: 899)
+Completed 200 OK in 8ms (Views: 2.8ms | ActiveRecord: 1.1ms | Allocations: 3279)
+
+
+Started GET "/users?keyword=" for ::1 at 2020-09-10 14:01:20 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>""}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  Rendered users/index.json.jbuilder (Duration: 0.1ms | Allocations: 19)
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.6ms | Allocations: 2292)
+
+
+Started GET "/users?keyword=ren%20" for ::1 at 2020-09-10 14:04:05 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"ren "}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%ren %') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.0ms | Allocations: 740)
+Completed 200 OK in 8ms (Views: 2.6ms | ActiveRecord: 0.9ms | Allocations: 3129)
+
+
+Started GET "/users?keyword=ren" for ::1 at 2020-09-10 14:04:07 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"ren"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%ren%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.3ms | Allocations: 740)
+Completed 200 OK in 8ms (Views: 2.3ms | ActiveRecord: 1.3ms | Allocations: 3140)
+
+
+Started GET "/users?keyword=re" for ::1 at 2020-09-10 14:04:08 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"re"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%re%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 1.9ms | Allocations: 740)
+Completed 200 OK in 9ms (Views: 2.4ms | ActiveRecord: 1.1ms | Allocations: 3126)
+
+
+Started GET "/users?keyword=r" for ::1 at 2020-09-10 14:04:08 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"r"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%r%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.3ms | Allocations: 899)
+Completed 200 OK in 8ms (Views: 2.4ms | ActiveRecord: 1.1ms | Allocations: 3279)
+
+
+Started GET "/users?keyword=" for ::1 at 2020-09-10 14:04:13 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>""}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  Rendered users/index.json.jbuilder (Duration: 0.1ms | Allocations: 19)
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 0.5ms | Allocations: 2290)
+
+
+Started GET "/users?keyword=p" for ::1 at 2020-09-10 14:04:19 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"p"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%p%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.1ms | Allocations: 899)
+Completed 200 OK in 7ms (Views: 2.2ms | ActiveRecord: 1.0ms | Allocations: 3280)
+
+
+Started GET "/groups/new" for ::1 at 2020-09-10 14:06:49 +0900
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/_form.html.haml (Duration: 2.6ms | Allocations: 710)
+  Rendered groups/new.html.haml within layouts/application (Duration: 3.0ms | Allocations: 795)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 27ms (Views: 19.9ms | ActiveRecord: 1.6ms | Allocations: 15437)
+
+
+Started GET "/users?keyword=p" for ::1 at 2020-09-10 14:06:57 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"p"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%p%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.0ms | Allocations: 899)
+Completed 200 OK in 7ms (Views: 2.2ms | ActiveRecord: 1.0ms | Allocations: 3272)
+
+
+Started POST "/groups" for ::1 at 2020-09-10 14:07:05 +0900
+Processing by GroupsController#create as HTML
+  Parameters: {"authenticity_token"=>"vXaFpHOTMXdwrP+S5QRjhnQKQnVGTdrRnmfipbVMpqQ+Qx5h+DmSwwxWHC+p7p3jVjkzaqNbJLVZ7i0+/j69Qw==", "group"=>{"name"=>"検証3"}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :name attribute in Group model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from create at /Users/mitsuhirochikazawa/projects/chat-space/app/controllers/groups_controller.rb:13)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+  [1m[36mGroup Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM `groups` WHERE `groups`.`name` = BINARY '検証3' LIMIT 1[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+  [1m[36mGroup Create (0.5ms)[0m  [1m[32mINSERT INTO `groups` (`name`, `created_at`, `updated_at`) VALUES ('検証3', '2020-09-10 05:07:05.788340', '2020-09-10 05:07:05.788340')[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 17ms (ActiveRecord: 2.7ms | Allocations: 6276)
+
+
+Started GET "/" for ::1 at 2020-09-10 14:07:05 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 43.7ms | Allocations: 21837)
+  Rendered groups/index.html.haml within layouts/application (Duration: 46.3ms | Allocations: 23731)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.3ms | Allocations: 39)
+Completed 200 OK in 59ms (Views: 49.1ms | ActiveRecord: 7.4ms | Allocations: 37905)
+
+
+Started GET "/groups/4/messages" for ::1 at 2020-09-10 14:07:19 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:29:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 23.8ms | Allocations: 7650)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 4[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 3)
+  Rendered messages/_main_chat.html.haml (Duration: 18.3ms | Allocations: 8033)
+  Rendered messages/index.html.haml within layouts/application (Duration: 47.7ms | Allocations: 17643)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 74ms (Views: 62.4ms | ActiveRecord: 5.4ms | Allocations: 33276)
+
+
+Started GET "/groups/7/messages" for ::1 at 2020-09-10 14:07:22 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"7"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:29:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 21.5ms | Allocations: 7644)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 7[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 3)
+  Rendered messages/_main_chat.html.haml (Duration: 7.5ms | Allocations: 2535)
+  Rendered messages/index.html.haml within layouts/application (Duration: 29.6ms | Allocations: 10329)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 80ms (Views: 67.2ms | ActiveRecord: 5.9ms | Allocations: 25206)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-10 14:07:24 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:29:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 20.9ms | Allocations: 7641)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [2 times] (Duration: 5.1ms | Allocations: 3218)
+  Rendered messages/_main_chat.html.haml (Duration: 18.8ms | Allocations: 8102)
+  Rendered messages/index.html.haml within layouts/application (Duration: 40.4ms | Allocations: 15893)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 67ms (Views: 54.2ms | ActiveRecord: 6.0ms | Allocations: 30672)
+
+
+Started GET "/users?keyword=" for ::1 at 2020-09-10 14:07:37 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>""}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  Rendered users/index.json.jbuilder (Duration: 0.1ms | Allocations: 19)
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.4ms | Allocations: 2276)
+
+
+Started GET "/users?keyword=p" for ::1 at 2020-09-10 14:07:38 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"p"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%p%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.7ms | Allocations: 899)
+Completed 200 OK in 9ms (Views: 2.9ms | ActiveRecord: 1.4ms | Allocations: 3265)
+
+
+Started GET "/users?keyword=p" for ::1 at 2020-09-10 14:09:20 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"p"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%p%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.7ms | Allocations: 899)
+Completed 200 OK in 9ms (Views: 2.8ms | ActiveRecord: 1.2ms | Allocations: 3284)
+
+
+Started GET "/users?keyword=p" for ::1 at 2020-09-10 14:09:21 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"p"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%p%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.8ms | Allocations: 899)
+Completed 200 OK in 9ms (Views: 3.0ms | ActiveRecord: 1.3ms | Allocations: 3294)
+
+
+Started GET "/users?keyword=" for ::1 at 2020-09-10 14:09:21 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>""}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  Rendered users/index.json.jbuilder (Duration: 0.3ms | Allocations: 19)
+Completed 200 OK in 6ms (Views: 1.2ms | ActiveRecord: 0.8ms | Allocations: 2281)
+
+
+Started GET "/groups/new" for ::1 at 2020-09-10 14:09:23 +0900
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/_form.html.haml (Duration: 2.4ms | Allocations: 719)
+  Rendered groups/new.html.haml within layouts/application (Duration: 2.9ms | Allocations: 804)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.2ms | Allocations: 22)
+Completed 200 OK in 30ms (Views: 23.3ms | ActiveRecord: 0.6ms | Allocations: 15449)
+
+
+Started GET "/" for ::1 at 2020-09-10 14:32:59 +0900
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 71.5ms | Allocations: 31543)
+  Rendered groups/index.html.haml within layouts/application (Duration: 76.7ms | Allocations: 35034)
+[Webpacker] Compiling...
+Started GET "/" for ::1 at 2020-09-10 14:33:04 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 21.7ms | Allocations: 7648)
+  Rendered groups/index.html.haml within layouts/application (Duration: 22.1ms | Allocations: 7736)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/mitsuhirochikazawa/projects/chat-space/public/packs
+[Webpacker] Hash: 5f130c8ee281b6b9a05e
+Version: webpack 4.44.0
+Time: 1566ms
+Built at: 2020/09/10 14:33:04
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-ea971fdc6f619fad3ed3.js    485 KiB  application  [emitted] [immutable]  application
+js/application-ea971fdc6f619fad3ed3.js.map    478 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-ea971fdc6f619fad3ed3.js js/application-ea971fdc6f619fad3ed3.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/message.js] 1.86 KiB {application} [built]
+[./app/javascript/packs/application.js] 965 bytes {application} [built]
+[./app/javascript/users.js] 2.1 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 109 hidden modules
+
+  Rendered layouts/_notifications.html.haml (Duration: 2.1ms | Allocations: 1713)
+Completed 200 OK in 5043ms (Views: 4999.8ms | ActiveRecord: 22.4ms | Allocations: 1509321)
+
+
+[Webpacker] Compiled all packs in /Users/mitsuhirochikazawa/projects/chat-space/public/packs
+[Webpacker] Hash: 5f130c8ee281b6b9a05e
+Version: webpack 4.44.0
+Time: 1100ms
+Built at: 2020/09/10 14:33:07
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-ea971fdc6f619fad3ed3.js    485 KiB  application  [emitted] [immutable]  application
+js/application-ea971fdc6f619fad3ed3.js.map    478 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-ea971fdc6f619fad3ed3.js js/application-ea971fdc6f619fad3ed3.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/message.js] 1.86 KiB {application} [built]
+[./app/javascript/packs/application.js] 965 bytes {application} [built]
+[./app/javascript/users.js] 2.1 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 109 hidden modules
+
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 2456ms (Views: 2447.6ms | ActiveRecord: 3.8ms | Allocations: 27078)
+
+
+Started GET "/users/1/edit" for ::1 at 2020-09-10 14:33:13 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (Duration: 299.4ms | Allocations: 200598)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 23)
+Completed 200 OK in 320ms (Views: 314.2ms | ActiveRecord: 0.5ms | Allocations: 215282)
+
+
+Started GET "/" for ::1 at 2020-09-10 14:33:17 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 24.3ms | Allocations: 7648)
+  Rendered groups/index.html.haml within layouts/application (Duration: 24.7ms | Allocations: 7736)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 48ms (Views: 39.3ms | ActiveRecord: 4.5ms | Allocations: 21854)
+
+
+Started GET "/users/1/edit" for ::1 at 2020-09-10 14:33:19 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (Duration: 2.4ms | Allocations: 767)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 23)
+Completed 200 OK in 26ms (Views: 21.3ms | ActiveRecord: 0.7ms | Allocations: 14856)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2020-09-10 14:33:21 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fJqURKuDcjcxrJYLhE/YgBnwpZjj07y+5UCzJhr1NoX/rw+BICnRg01WdbbIpSblO8PUhwbFQtoiyXy9UYctYg=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 0.6ms | Allocations: 3433)
+
+
+Started GET "/" for ::1 at 2020-09-10 14:33:21 +0900
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms | Allocations: 587)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-09-10 14:33:21 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (Duration: 3.5ms | Allocations: 1894)
+  Rendered devise/sessions/new.html.haml within layouts/application (Duration: 13.6ms | Allocations: 7236)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.2ms | Allocations: 39)
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.0ms | Allocations: 21113)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-09-10 14:33:24 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (Duration: 0.5ms | Allocations: 143)
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_new_html_haml___3215344023903471042_70150647535680 at /Users/mitsuhirochikazawa/projects/chat-space/app/views/devise/registrations/new.html.haml:8)
+  Rendered devise/registrations/new.html.haml within layouts/application (Duration: 11.6ms | Allocations: 7370)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.2ms | Allocations: 22)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.0ms | Allocations: 20899)
+
+
+Started POST "/users" for ::1 at 2020-09-10 14:34:15 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"CKtDaEOZ1jcFJX6nEHplrkhggvmSOk2fDRk0GJ0KtZ1HFGVSxR6s+rNciO+7GYZqmUKD07828phH0EplOSlIOA==", "user"=>{"name"=>"test", "email"=>"testtest@11", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.6ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'testtest@11' LIMIT 1[0m
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :name attribute in User model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from block in build_relation at /Users/mitsuhirochikazawa/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-6.0.3.2/lib/active_record/validations/uniqueness.rb:64)
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`name` = BINARY 'test' LIMIT 1[0m
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('test', 'testtest@11', '$2a$12$fa2CwO1Cbj3vy4pCypyuyOohb6.ugvQMWZpcjE5/ogrVFwogkWmwC', '2020-09-10 05:34:16.107284', '2020-09-10 05:34:16.107284')[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 300ms (ActiveRecord: 5.4ms | Allocations: 13599)
+
+
+Started GET "/" for ::1 at 2020-09-10 14:34:16 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 5[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  Rendered messages/_side_bar.html.haml (Duration: 2.4ms | Allocations: 1270)
+  Rendered groups/index.html.haml within layouts/application (Duration: 2.6ms | Allocations: 1357)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 39)
+Completed 200 OK in 16ms (Views: 13.3ms | ActiveRecord: 0.7ms | Allocations: 15479)
+
+
+Started GET "/users/5/edit" for ::1 at 2020-09-10 14:34:27 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (Duration: 3.0ms | Allocations: 777)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.2ms | Allocations: 23)
+Completed 200 OK in 30ms (Views: 24.2ms | ActiveRecord: 0.8ms | Allocations: 14866)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2020-09-10 14:34:29 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wjEergRJXXCYOtRNxONH07LCDT5GvpYKmvZ9qZ92LdmNjjiUgs4nvS5DIgVvgKQXY+AMFGuyKQ3QPwPUO1XQfA=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.6ms | Allocations: 2507)
+
+
+Started GET "/" for ::1 at 2020-09-10 14:34:29 +0900
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 575)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-09-10 14:34:29 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (Duration: 0.7ms | Allocations: 98)
+  Rendered devise/sessions/new.html.haml within layouts/application (Duration: 3.7ms | Allocations: 825)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 39)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.0ms | Allocations: 13766)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-09-10 14:34:30 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (Duration: 0.5ms | Allocations: 92)
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_new_html_haml___3215344023903471042_70150647535680 at /Users/mitsuhirochikazawa/projects/chat-space/app/views/devise/registrations/new.html.haml:8)
+  Rendered devise/registrations/new.html.haml within layouts/application (Duration: 3.7ms | Allocations: 1371)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 25ms (Views: 22.7ms | ActiveRecord: 0.0ms | Allocations: 14223)
+
+
+Started POST "/users" for ::1 at 2020-09-10 14:35:05 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"t6cvCVuods/o0HK6IvSOIMTf/pCMGaEihGSC/AD7S1IBfbrHbaJbeKHgSa9MHqUUF4sOz0GGA7BWjIJ9jWKE/Q==", "user"=>{"name"=>"test2", "email"=>"testtest@22", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'testtest@22' LIMIT 1[0m
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :name attribute in User model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from block in build_relation at /Users/mitsuhirochikazawa/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-6.0.3.2/lib/active_record/validations/uniqueness.rb:64)
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`name` = BINARY 'test2' LIMIT 1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('test2', 'testtest@22', '$2a$12$0hSIy./r8CQvTTYIhUTpIO.Sh7YSWF8J5E2lNBi5n4adct8Okjcga', '2020-09-10 05:35:05.748545', '2020-09-10 05:35:05.748545')[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 264ms (ActiveRecord: 2.1ms | Allocations: 9228)
+
+
+Started GET "/" for ::1 at 2020-09-10 14:35:05 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 6[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  Rendered messages/_side_bar.html.haml (Duration: 2.1ms | Allocations: 1263)
+  Rendered groups/index.html.haml within layouts/application (Duration: 2.3ms | Allocations: 1350)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 39)
+Completed 200 OK in 16ms (Views: 12.5ms | ActiveRecord: 0.8ms | Allocations: 15463)
+
+
+Started GET "/groups/new" for ::1 at 2020-09-10 14:35:08 +0900
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/_form.html.haml (Duration: 22.6ms | Allocations: 11640)
+  Rendered groups/new.html.haml within layouts/application (Duration: 26.8ms | Allocations: 13545)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 73ms (Views: 46.8ms | ActiveRecord: 1.1ms | Allocations: 34149)
+
+
+Started GET "/users?keyword=t" for ::1 at 2020-09-10 14:35:13 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"t"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%t%') AND `users`.`id` != 6 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 3.6ms | Allocations: 1041)
+Completed 200 OK in 15ms (Views: 8.2ms | ActiveRecord: 1.2ms | Allocations: 4715)
+
+
+Started GET "/users/6/edit" for ::1 at 2020-09-10 14:35:25 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (Duration: 2.5ms | Allocations: 777)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.2ms | Allocations: 23)
+Completed 200 OK in 29ms (Views: 23.3ms | ActiveRecord: 0.6ms | Allocations: 14880)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2020-09-10 14:35:26 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Gjb0GnBXqe1ZK9W4Ed+U99rYmXRsztsts8zLM5qtW+6s7GHURl2EWhAb7q1/Nb/DCYxpK6FReb9hJMuyFzSUQQ=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.7ms | Allocations: 2516)
+
+
+Started GET "/" for ::1 at 2020-09-10 14:35:26 +0900
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 581)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-09-10 14:35:26 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (Duration: 0.6ms | Allocations: 98)
+  Rendered devise/sessions/new.html.haml within layouts/application (Duration: 3.5ms | Allocations: 825)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 39)
+Completed 200 OK in 56ms (Views: 53.5ms | ActiveRecord: 0.0ms | Allocations: 13744)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-09-10 14:35:27 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (Duration: 0.5ms | Allocations: 98)
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_new_html_haml___3215344023903471042_70150647535680 at /Users/mitsuhirochikazawa/projects/chat-space/app/views/devise/registrations/new.html.haml:8)
+  Rendered devise/registrations/new.html.haml within layouts/application (Duration: 4.0ms | Allocations: 1389)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.2ms | Allocations: 22)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.0ms | Allocations: 14248)
+
+
+Started POST "/users" for ::1 at 2020-09-10 14:35:57 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"VKtcYYRONyVxMjuAcc+97Dlse4MY1olvu4IJHyyITxK+qtQsyhmtLgLw8/gG3yTbbiyRpbsgMuO3OM/EPxDDJg==", "user"=>{"name"=>"test3", "email"=>"testtest@33", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'testtest@33' LIMIT 1[0m
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :name attribute in User model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from block in build_relation at /Users/mitsuhirochikazawa/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-6.0.3.2/lib/active_record/validations/uniqueness.rb:64)
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`name` = BINARY 'test3' LIMIT 1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('test3', 'testtest@33', '$2a$12$9HYxO680MNkHoPswrHNRQuBD2CQ7lbFb1ga9ZlncXx6P8phmSHCIq', '2020-09-10 05:35:57.436598', '2020-09-10 05:35:57.436598')[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 265ms (ActiveRecord: 2.1ms | Allocations: 9232)
+
+
+Started GET "/" for ::1 at 2020-09-10 14:35:57 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 7[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  Rendered messages/_side_bar.html.haml (Duration: 2.0ms | Allocations: 1270)
+  Rendered groups/index.html.haml within layouts/application (Duration: 2.3ms | Allocations: 1357)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 39)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 0.7ms | Allocations: 15476)
+
+
+Started GET "/users/7/edit" for ::1 at 2020-09-10 14:35:59 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (Duration: 2.4ms | Allocations: 766)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 23)
+Completed 200 OK in 26ms (Views: 20.6ms | ActiveRecord: 0.4ms | Allocations: 14849)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2020-09-10 14:36:01 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Xm1khu7JH+lz8y0DElxjdFQaNAtqiAjYl4wFBRLUJLi0bOzLoJ6F4gAx5XtlTPpDA1reLcl+s1SbNsPeAUyojA=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms | Allocations: 2519)
+
+
+Started GET "/" for ::1 at 2020-09-10 14:36:01 +0900
+Processing by GroupsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 577)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-09-10 14:36:01 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (Duration: 0.6ms | Allocations: 92)
+  Rendered devise/sessions/new.html.haml within layouts/application (Duration: 4.0ms | Allocations: 816)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 39)
+Completed 200 OK in 27ms (Views: 24.8ms | ActiveRecord: 0.0ms | Allocations: 13736)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-09-10 14:36:11 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"qIbRIcd+410S67pp+cNy2hTDCSJUEHqf3lHNuOAiJXG1peNQ92aiW2lbGXm4zSIW6DZxzh/ZErw16wu1nDh0Bg==", "user"=>{"email"=>"k67e5b9fd7zh2@softbank.ne.jp", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'k67e5b9fd7zh2@softbank.ne.jp' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 267ms (ActiveRecord: 0.5ms | Allocations: 5506)
+
+
+Started GET "/" for ::1 at 2020-09-10 14:36:11 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 12.6ms | Allocations: 7641)
+  Rendered groups/index.html.haml within layouts/application (Duration: 12.8ms | Allocations: 7728)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 39)
+Completed 200 OK in 26ms (Views: 21.1ms | ActiveRecord: 2.8ms | Allocations: 21834)
+
+
+Started GET "/groups/1/messages" for ::1 at 2020-09-10 14:36:13 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:29:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 24.2ms | Allocations: 7650)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of messages/_message.html.haml [2 times] (Duration: 2.9ms | Allocations: 3208)
+  Rendered messages/_main_chat.html.haml (Duration: 23.8ms | Allocations: 13299)
+  Rendered messages/index.html.haml within layouts/application (Duration: 52.3ms | Allocations: 22916)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 74ms (Views: 61.3ms | ActiveRecord: 6.0ms | Allocations: 38561)
+
+
+Started GET "/groups/new" for ::1 at 2020-09-10 14:36:21 +0900
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/_form.html.haml (Duration: 2.3ms | Allocations: 739)
+  Rendered groups/new.html.haml within layouts/application (Duration: 2.6ms | Allocations: 824)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 28ms (Views: 20.4ms | ActiveRecord: 0.4ms | Allocations: 15464)
+
+
+Started GET "/users?keyword=p" for ::1 at 2020-09-10 14:36:38 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"p"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%p%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.0ms | Allocations: 899)
+Completed 200 OK in 7ms (Views: 2.2ms | ActiveRecord: 1.0ms | Allocations: 3277)
+
+
+Started GET "/users?keyword=" for ::1 at 2020-09-10 14:36:50 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>""}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  Rendered users/index.json.jbuilder (Duration: 0.1ms | Allocations: 19)
+Completed 200 OK in 6ms (Views: 0.9ms | ActiveRecord: 0.5ms | Allocations: 2433)
+
+
+Started GET "/users?keyword=t" for ::1 at 2020-09-10 14:36:51 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"t"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%t%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.5ms | Allocations: 1059)
+Completed 200 OK in 8ms (Views: 2.9ms | ActiveRecord: 1.1ms | Allocations: 3444)
+
+
+Started GET "/users?keyword=te" for ::1 at 2020-09-10 14:36:51 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"te"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%te%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.8ms | Allocations: 1059)
+Completed 200 OK in 8ms (Views: 2.9ms | ActiveRecord: 1.3ms | Allocations: 3439)
+
+
+Started POST "/groups" for ::1 at 2020-09-10 14:36:58 +0900
+Processing by GroupsController#create as HTML
+  Parameters: {"authenticity_token"=>"jRHeMg8BuKTk/Df9yBRKvxElNYVHtJf8PHdNEVRhvUgH7/eAcoF9hIVES3oUAoqU8xtsIKhzfzejfhrjkln5mw==", "group"=>{"name"=>"test gru", "user_ids"=>["1", "4", "5", "7"]}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` IN (1, 4, 5, 7)[0m
+  ↳ app/controllers/groups_controller.rb:12:in `create'
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :name attribute in User model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from create at /Users/mitsuhirochikazawa/projects/chat-space/app/controllers/groups_controller.rb:13)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`name` = BINARY 'chikazawa' AND `users`.`id` != 1 LIMIT 1[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :name attribute in User model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from create at /Users/mitsuhirochikazawa/projects/chat-space/app/controllers/groups_controller.rb:13)
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`name` = BINARY 'PW:email integer３' AND `users`.`id` != 4 LIMIT 1[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :name attribute in User model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from create at /Users/mitsuhirochikazawa/projects/chat-space/app/controllers/groups_controller.rb:13)
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`name` = BINARY 'test' AND `users`.`id` != 5 LIMIT 1[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :name attribute in User model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from create at /Users/mitsuhirochikazawa/projects/chat-space/app/controllers/groups_controller.rb:13)
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`name` = BINARY 'test3' AND `users`.`id` != 7 LIMIT 1[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :name attribute in Group model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from create at /Users/mitsuhirochikazawa/projects/chat-space/app/controllers/groups_controller.rb:13)
+  [1m[36mGroup Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM `groups` WHERE `groups`.`name` = BINARY 'test gru' LIMIT 1[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+  [1m[36mGroup Create (0.4ms)[0m  [1m[32mINSERT INTO `groups` (`name`, `created_at`, `updated_at`) VALUES ('test gru', '2020-09-10 05:36:58.717993', '2020-09-10 05:36:58.717993')[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+  [1m[36mGroupUser Create (0.4ms)[0m  [1m[32mINSERT INTO `group_users` (`group_id`, `user_id`, `created_at`, `updated_at`) VALUES (9, 1, '2020-09-10 05:36:58.721177', '2020-09-10 05:36:58.721177')[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+  [1m[36mGroupUser Create (0.4ms)[0m  [1m[32mINSERT INTO `group_users` (`group_id`, `user_id`, `created_at`, `updated_at`) VALUES (9, 4, '2020-09-10 05:36:58.724357', '2020-09-10 05:36:58.724357')[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+  [1m[36mGroupUser Create (0.5ms)[0m  [1m[32mINSERT INTO `group_users` (`group_id`, `user_id`, `created_at`, `updated_at`) VALUES (9, 5, '2020-09-10 05:36:58.727248', '2020-09-10 05:36:58.727248')[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+  [1m[36mGroupUser Create (0.3ms)[0m  [1m[32mINSERT INTO `group_users` (`group_id`, `user_id`, `created_at`, `updated_at`) VALUES (9, 7, '2020-09-10 05:36:58.730467', '2020-09-10 05:36:58.730467')[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/groups_controller.rb:13:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 49ms (ActiveRecord: 6.5ms | Allocations: 20260)
+
+
+Started GET "/" for ::1 at 2020-09-10 14:36:58 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 9 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 17.2ms | Allocations: 8700)
+  Rendered groups/index.html.haml within layouts/application (Duration: 17.4ms | Allocations: 8787)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 39)
+Completed 200 OK in 31ms (Views: 24.7ms | ActiveRecord: 3.3ms | Allocations: 22931)
+
+
+Started GET "/groups/9/messages" for ::1 at 2020-09-10 14:37:03 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"9"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 9 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:29:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 9 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 25.3ms | Allocations: 8704)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 9[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 9[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 3)
+  Rendered messages/_main_chat.html.haml (Duration: 7.7ms | Allocations: 2537)
+  Rendered messages/index.html.haml within layouts/application (Duration: 33.6ms | Allocations: 11391)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 59ms (Views: 45.0ms | ActiveRecord: 6.3ms | Allocations: 26253)
+
+
+Started GET "/groups/9/edit" for ::1 at 2020-09-10 14:37:11 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 9 LIMIT 1[0m
+  ↳ app/controllers/groups_controller.rb:23:in `edit'
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 9[0m
+  ↳ app/views/groups/_form.html.haml:28
+  Rendered groups/_form.html.haml (Duration: 6.2ms | Allocations: 1950)
+  Rendered groups/edit.html.haml within layouts/application (Duration: 9.6ms | Allocations: 3784)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 34ms (Views: 25.9ms | ActiveRecord: 1.6ms | Allocations: 18505)
+
+
+Started GET "/users?keyword=t" for ::1 at 2020-09-10 14:37:26 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"t"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%t%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.6ms | Allocations: 1059)
+Completed 200 OK in 8ms (Views: 2.7ms | ActiveRecord: 1.3ms | Allocations: 3442)
+
+
+Started PATCH "/groups/9" for ::1 at 2020-09-10 14:37:33 +0900
+Processing by GroupsController#update as HTML
+  Parameters: {"authenticity_token"=>"Mb6+WjSDWFZuOnGGVuPWWPFIidH9G5qj+Q+TK91tYKy7QJfoSQOddg+CDQGK9RZzE3bQdBLccmhmBsTZG1Ukfw==", "group"=>{"name"=>"test gru", "user_ids"=>["1", "4", "5", "6"]}, "commit"=>"更新する", "id"=>"9"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 9 LIMIT 1[0m
+  ↳ app/controllers/groups_controller.rb:28:in `update'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/groups_controller.rb:29:in `update'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` IN (1, 4, 5, 6)[0m
+  ↳ app/controllers/groups_controller.rb:29:in `update'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 9[0m
+  ↳ app/controllers/groups_controller.rb:29:in `update'
+  [1m[36mGroupUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM `group_users` WHERE `group_users`.`group_id` = 9 AND `group_users`.`user_id` = 7[0m
+  ↳ app/controllers/groups_controller.rb:29:in `update'
+  [1m[36mGroupUser Create (0.7ms)[0m  [1m[32mINSERT INTO `group_users` (`group_id`, `user_id`, `created_at`, `updated_at`) VALUES (9, 6, '2020-09-10 05:37:33.149036', '2020-09-10 05:37:33.149036')[0m
+  ↳ app/controllers/groups_controller.rb:29:in `update'
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :name attribute in Group model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from update at /Users/mitsuhirochikazawa/projects/chat-space/app/controllers/groups_controller.rb:29)
+  [1m[36mGroup Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM `groups` WHERE `groups`.`name` = BINARY 'test gru' AND `groups`.`id` != 9 LIMIT 1[0m
+  ↳ app/controllers/groups_controller.rb:29:in `update'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/groups_controller.rb:29:in `update'
+Redirected to http://localhost:3000/groups/9/messages
+Completed 302 Found in 41ms (ActiveRecord: 6.2ms | Allocations: 10768)
+
+
+Started GET "/groups/9/messages" for ::1 at 2020-09-10 14:37:33 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"9"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 9 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:29:in `set_group'
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/_side_bar.html.haml:12
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 3 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 4 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 6 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 7 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 9 ORDER BY `messages`.`id` DESC LIMIT 1[0m
+  ↳ app/models/group.rb:8:in `show_last_message'
+  Rendered messages/_side_bar.html.haml (Duration: 20.8ms | Allocations: 8705)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 9[0m
+  ↳ app/views/messages/_main_chat.html.haml:9
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 9[0m
+  ↳ app/views/messages/_main_chat.html.haml:17
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 3)
+  Rendered messages/_main_chat.html.haml (Duration: 4.6ms | Allocations: 2541)
+  Rendered messages/index.html.haml within layouts/application (Duration: 25.8ms | Allocations: 11396)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.2ms | Allocations: 39)
+Completed 200 OK in 46ms (Views: 34.3ms | ActiveRecord: 5.6ms | Allocations: 26301)
+
+
+Started GET "/groups/9/edit" for ::1 at 2020-09-10 14:37:56 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`id` = 9 LIMIT 1[0m
+  ↳ app/controllers/groups_controller.rb:23:in `edit'
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 9[0m
+  ↳ app/views/groups/_form.html.haml:28
+  Rendered groups/_form.html.haml (Duration: 6.2ms | Allocations: 1920)
+  Rendered groups/edit.html.haml within layouts/application (Duration: 6.6ms | Allocations: 2005)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_notifications.html.haml (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 35ms (Views: 27.0ms | ActiveRecord: 1.8ms | Allocations: 16714)
+
+
+Started GET "/users?keyword=c" for ::1 at 2020-09-10 14:37:58 +0900
+Processing by UsersController#index as JSON
+  Parameters: {"keyword"=>"c"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%c%') AND `users`.`id` != 1 LIMIT 10[0m
+  ↳ app/views/users/index.json.jbuilder:1
+  Rendered users/index.json.jbuilder (Duration: 2.1ms | Allocations: 740)
+Completed 200 OK in 8ms (Views: 2.3ms | ActiveRecord: 1.4ms | Allocations: 3118)
+
+
