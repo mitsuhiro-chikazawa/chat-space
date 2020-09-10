@@ -41,6 +41,7 @@
   &__group--list {
     height: calc(100vh - 100px);
     background-color: #2f3e51;
+    overflow: scroll;
     &__top-items {
       margin: 0px 0px 40px 0px;
       padding: 20px 20px 0px 20px;
@@ -101,6 +102,7 @@
   .chatmain__message--field {
     height: calc(100vh - 100px - 90px);
     background-color: #fafafa;
+    overflow: scroll;
     .MessageBox {
       padding-bottom: 46px;
       padding-top: 35px;
