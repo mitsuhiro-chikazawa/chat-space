@@ -11,6 +11,7 @@ require("channels")
 // jqueryの設定をrails6.0に変更した。ディレクトリ構造がカリキュラムとは異なる。
 // 以下のrequireを毎回記述する
 require("message")
+require("users")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
