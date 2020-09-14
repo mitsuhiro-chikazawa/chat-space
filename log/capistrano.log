@@ -1,0 +1,322 @@
+# Logfile created on 2020-09-15 08:22:00 +0900 by logger.rb/66358
+  INFO ---------------------------------------------------------------------------
+  INFO START 2020-09-15 08:22:00 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [7fa28f4c] Running [ -d $HOME/.rbenv/versions/2.6.5 ] as ec2-user@52.198.215.219
+ DEBUG [7fa28f4c] Command: [ -d $HOME/.rbenv/versions/2.6.5 ]
+ DEBUG [7fa28f4c] Finished in 0.405 seconds with exit status 0 (successful).
+  INFO [7d8c3e0c] Running /usr/bin/env mkdir -p /tmp as ec2-user@52.198.215.219
+ DEBUG [7d8c3e0c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /tmp )
+  INFO [7d8c3e0c] Finished in 0.100 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-chat-space-production-mitsuhirochikazawa.sh 0.0%
+  INFO Uploading /tmp/git-ssh-chat-space-production-mitsuhirochikazawa.sh 100.0%
+  INFO [782168e7] Running /usr/bin/env chmod 700 /tmp/git-ssh-chat-space-production-mitsuhirochikazawa.sh as ec2-user@52.198.215.219
+ DEBUG [782168e7] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env chmod 700 /tmp/git-ssh-chat-space-production-mitsuhirochikazawa.sh )
+  INFO [782168e7] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [36f6378b] Running /usr/bin/env git ls-remote git@github.com:chika-tsubaru/chat-space.git HEAD as ec2-user@52.198.215.219
+ DEBUG [36f6378b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-chat-space-production-mitsuhirochikazawa.sh" ; /usr/bin/env git ls-remote git@github.com:chika-tsubaru/chat-space.git HEAD )
+ DEBUG [36f6378b] 	8a0a3b24621e0c49402838485ef193a3fe46952b	HEAD
+  INFO [36f6378b] Finished in 2.318 seconds with exit status 0 (successful).
+  INFO [07279127] Running /usr/bin/env mkdir -p /var/www/chat-space/shared /var/www/chat-space/releases as ec2-user@52.198.215.219
+ DEBUG [07279127] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /var/www/chat-space/shared /var/www/chat-space/releases )
+  INFO [07279127] Finished in 0.208 seconds with exit status 0 (successful).
+  INFO [ce65dd52] Running /usr/bin/env mkdir -p /var/www/chat-space/shared/log /var/www/chat-space/shared/tmp/pids /var/www/chat-space/shared/tmp/cache /var/www/chat-space/shared/tmp/sockets /var/www/chat-space/shared/vendor/bundle /var/www/chat-space/shared/public/system /var/www/chat-space/shared/public/uploads /var/www/chat-space/shared/public/assets as ec2-user@52.198.215.219
+ DEBUG [ce65dd52] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /var/www/chat-space/shared/log /var/www/chat-space/shared/tmp/pids /var/www/chat-space/shared/tmp/cache /var/www/chat-space/shared/tmp/sockets /var/www/chat-space/shared/vendor/bundle /var/www/chat-space/shared/public/system /var/www/chat-space/shared/public/uploads /var/www/chat-space/shared/public/assets )
+  INFO [ce65dd52] Finished in 0.058 seconds with exit status 0 (successful).
+ DEBUG [9924d864] Running [ -f /var/www/chat-space/current/REVISION ] as ec2-user@52.198.215.219
+ DEBUG [9924d864] Command: [ -f /var/www/chat-space/current/REVISION ]
+ DEBUG [9924d864] Finished in 0.108 seconds with exit status 1 (failed).
+ DEBUG [61dc294f] Running [ -f /var/www/chat-space/repo/HEAD ] as ec2-user@52.198.215.219
+ DEBUG [61dc294f] Command: [ -f /var/www/chat-space/repo/HEAD ]
+ DEBUG [61dc294f] Finished in 0.109 seconds with exit status 1 (failed).
+ DEBUG [15452b43] Running if test ! -d /var/www/chat-space; then echo "Directory does not exist '/var/www/chat-space'" 1>&2; false; fi as ec2-user@52.198.215.219
+ DEBUG [15452b43] Command: if test ! -d /var/www/chat-space; then echo "Directory does not exist '/var/www/chat-space'" 1>&2; false; fi
+ DEBUG [15452b43] Finished in 0.102 seconds with exit status 0 (successful).
+  INFO [626d2186] Running /usr/bin/env git clone --mirror git@github.com:chika-tsubaru/chat-space.git /var/www/chat-space/repo as ec2-user@52.198.215.219
+ DEBUG [626d2186] Command: cd /var/www/chat-space && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-chat-space-production-mitsuhirochikazawa.sh" ; /usr/bin/env git clone --mirror git@github.com:chika-tsubaru/chat-space.git /var/www/chat-space/repo )
+ DEBUG [626d2186] 	Cloning into bare repository '/var/www/chat-space/repo'...
+  INFO [626d2186] Finished in 3.395 seconds with exit status 0 (successful).
+ DEBUG [6fee8255] Running if test ! -d /var/www/chat-space/repo; then echo "Directory does not exist '/var/www/chat-space/repo'" 1>&2; false; fi as ec2-user@52.198.215.219
+ DEBUG [6fee8255] Command: if test ! -d /var/www/chat-space/repo; then echo "Directory does not exist '/var/www/chat-space/repo'" 1>&2; false; fi
+ DEBUG [6fee8255] Finished in 0.099 seconds with exit status 0 (successful).
+  INFO [4ce04dde] Running /usr/bin/env git remote set-url origin git@github.com:chika-tsubaru/chat-space.git as ec2-user@52.198.215.219
+ DEBUG [4ce04dde] Command: cd /var/www/chat-space/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-chat-space-production-mitsuhirochikazawa.sh" ; /usr/bin/env git remote set-url origin git@github.com:chika-tsubaru/chat-space.git )
+  INFO [4ce04dde] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [9ef56e5d] Running /usr/bin/env git remote update --prune as ec2-user@52.198.215.219
+ DEBUG [9ef56e5d] Command: cd /var/www/chat-space/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-chat-space-production-mitsuhirochikazawa.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [9ef56e5d] 	Fetching origin
+  INFO [9ef56e5d] Finished in 2.145 seconds with exit status 0 (successful).
+ DEBUG [012e26d2] Running if test ! -d /var/www/chat-space/repo; then echo "Directory does not exist '/var/www/chat-space/repo'" 1>&2; false; fi as ec2-user@52.198.215.219
+ DEBUG [012e26d2] Command: if test ! -d /var/www/chat-space/repo; then echo "Directory does not exist '/var/www/chat-space/repo'" 1>&2; false; fi
+ DEBUG [012e26d2] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [e317c28e] Running /usr/bin/env mkdir -p /var/www/chat-space/releases/20200914232204 as ec2-user@52.198.215.219
+ DEBUG [e317c28e] Command: cd /var/www/chat-space/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-chat-space-production-mitsuhirochikazawa.sh" ; /usr/bin/env mkdir -p /var/www/chat-space/releases/20200914232204 )
+  INFO [e317c28e] Finished in 0.102 seconds with exit status 0 (successful).
+  INFO [7f909e18] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/chat-space/releases/20200914232204 as ec2-user@52.198.215.219
+ DEBUG [7f909e18] Command: cd /var/www/chat-space/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-chat-space-production-mitsuhirochikazawa.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/chat-space/releases/20200914232204 )
+  INFO [7f909e18] Finished in 0.163 seconds with exit status 0 (successful).
+ DEBUG [60b6d560] Running if test ! -d /var/www/chat-space/repo; then echo "Directory does not exist '/var/www/chat-space/repo'" 1>&2; false; fi as ec2-user@52.198.215.219
+ DEBUG [60b6d560] Command: if test ! -d /var/www/chat-space/repo; then echo "Directory does not exist '/var/www/chat-space/repo'" 1>&2; false; fi
+ DEBUG [60b6d560] Finished in 0.110 seconds with exit status 0 (successful).
+ DEBUG [31332a29] Running /usr/bin/env git rev-list --max-count=1 master as ec2-user@52.198.215.219
+ DEBUG [31332a29] Command: cd /var/www/chat-space/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-chat-space-production-mitsuhirochikazawa.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [31332a29] 	8a0a3b24621e0c49402838485ef193a3fe46952b
+ DEBUG [31332a29] Finished in 0.104 seconds with exit status 0 (successful).
+ DEBUG [b420f328] Running if test ! -d /var/www/chat-space/releases/20200914232204; then echo "Directory does not exist '/var/www/chat-space/releases/20200914232204'" 1>&2; false; fi as ec2-user@52.198.215.219
+ DEBUG [b420f328] Command: if test ! -d /var/www/chat-space/releases/20200914232204; then echo "Directory does not exist '/var/www/chat-space/releases/20200914232204'" 1>&2; false; fi
+ DEBUG [b420f328] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [8ab6863a] Running /usr/bin/env echo "8a0a3b24621e0c49402838485ef193a3fe46952b" > REVISION as ec2-user@52.198.215.219
+ DEBUG [8ab6863a] Command: cd /var/www/chat-space/releases/20200914232204 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env echo "8a0a3b24621e0c49402838485ef193a3fe46952b" > REVISION )
+  INFO [8ab6863a] Finished in 0.107 seconds with exit status 0 (successful).
+  INFO [f4c71994] Running /usr/bin/env mkdir -p /var/www/chat-space/releases/20200914232204 /var/www/chat-space/releases/20200914232204/tmp /var/www/chat-space/releases/20200914232204/vendor /var/www/chat-space/releases/20200914232204/public as ec2-user@52.198.215.219
+ DEBUG [f4c71994] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /var/www/chat-space/releases/20200914232204 /var/www/chat-space/releases/20200914232204/tmp /var/www/chat-space/releases/20200914232204/vendor /var/www/chat-space/releases/20200914232204/public )
+  INFO [f4c71994] Finished in 0.103 seconds with exit status 0 (successful).
+ DEBUG [30602a25] Running [ -L /var/www/chat-space/releases/20200914232204/log ] as ec2-user@52.198.215.219
+ DEBUG [30602a25] Command: [ -L /var/www/chat-space/releases/20200914232204/log ]
+ DEBUG [30602a25] Finished in 0.099 seconds with exit status 1 (failed).
+ DEBUG [e8a19423] Running [ -d /var/www/chat-space/releases/20200914232204/log ] as ec2-user@52.198.215.219
+ DEBUG [e8a19423] Command: [ -d /var/www/chat-space/releases/20200914232204/log ]
+ DEBUG [e8a19423] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [fb4d52ed] Running /usr/bin/env rm -rf /var/www/chat-space/releases/20200914232204/log as ec2-user@52.198.215.219
+ DEBUG [fb4d52ed] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env rm -rf /var/www/chat-space/releases/20200914232204/log )
+  INFO [fb4d52ed] Finished in 0.102 seconds with exit status 0 (successful).
+  INFO [1949400a] Running /usr/bin/env ln -s /var/www/chat-space/shared/log /var/www/chat-space/releases/20200914232204/log as ec2-user@52.198.215.219
+ DEBUG [1949400a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /var/www/chat-space/shared/log /var/www/chat-space/releases/20200914232204/log )
+  INFO [1949400a] Finished in 0.104 seconds with exit status 0 (successful).
+ DEBUG [d227fd29] Running [ -L /var/www/chat-space/releases/20200914232204/tmp/pids ] as ec2-user@52.198.215.219
+ DEBUG [d227fd29] Command: [ -L /var/www/chat-space/releases/20200914232204/tmp/pids ]
+ DEBUG [d227fd29] Finished in 0.102 seconds with exit status 1 (failed).
+ DEBUG [614199c8] Running [ -d /var/www/chat-space/releases/20200914232204/tmp/pids ] as ec2-user@52.198.215.219
+ DEBUG [614199c8] Command: [ -d /var/www/chat-space/releases/20200914232204/tmp/pids ]
+ DEBUG [614199c8] Finished in 0.106 seconds with exit status 1 (failed).
+  INFO [ef96d27e] Running /usr/bin/env ln -s /var/www/chat-space/shared/tmp/pids /var/www/chat-space/releases/20200914232204/tmp/pids as ec2-user@52.198.215.219
+ DEBUG [ef96d27e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /var/www/chat-space/shared/tmp/pids /var/www/chat-space/releases/20200914232204/tmp/pids )
+  INFO [ef96d27e] Finished in 0.107 seconds with exit status 0 (successful).
+ DEBUG [a8e51f7b] Running [ -L /var/www/chat-space/releases/20200914232204/tmp/cache ] as ec2-user@52.198.215.219
+ DEBUG [a8e51f7b] Command: [ -L /var/www/chat-space/releases/20200914232204/tmp/cache ]
+ DEBUG [a8e51f7b] Finished in 0.098 seconds with exit status 1 (failed).
+ DEBUG [af8b61aa] Running [ -d /var/www/chat-space/releases/20200914232204/tmp/cache ] as ec2-user@52.198.215.219
+ DEBUG [af8b61aa] Command: [ -d /var/www/chat-space/releases/20200914232204/tmp/cache ]
+ DEBUG [af8b61aa] Finished in 0.125 seconds with exit status 1 (failed).
+  INFO [9d1f0e39] Running /usr/bin/env ln -s /var/www/chat-space/shared/tmp/cache /var/www/chat-space/releases/20200914232204/tmp/cache as ec2-user@52.198.215.219
+ DEBUG [9d1f0e39] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /var/www/chat-space/shared/tmp/cache /var/www/chat-space/releases/20200914232204/tmp/cache )
+  INFO [9d1f0e39] Finished in 0.103 seconds with exit status 0 (successful).
+ DEBUG [8f65d197] Running [ -L /var/www/chat-space/releases/20200914232204/tmp/sockets ] as ec2-user@52.198.215.219
+ DEBUG [8f65d197] Command: [ -L /var/www/chat-space/releases/20200914232204/tmp/sockets ]
+ DEBUG [8f65d197] Finished in 0.101 seconds with exit status 1 (failed).
+ DEBUG [280ef6c3] Running [ -d /var/www/chat-space/releases/20200914232204/tmp/sockets ] as ec2-user@52.198.215.219
+ DEBUG [280ef6c3] Command: [ -d /var/www/chat-space/releases/20200914232204/tmp/sockets ]
+ DEBUG [280ef6c3] Finished in 0.101 seconds with exit status 1 (failed).
+  INFO [33c0294f] Running /usr/bin/env ln -s /var/www/chat-space/shared/tmp/sockets /var/www/chat-space/releases/20200914232204/tmp/sockets as ec2-user@52.198.215.219
+ DEBUG [33c0294f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /var/www/chat-space/shared/tmp/sockets /var/www/chat-space/releases/20200914232204/tmp/sockets )
+  INFO [33c0294f] Finished in 0.101 seconds with exit status 0 (successful).
+ DEBUG [d06b41e4] Running [ -L /var/www/chat-space/releases/20200914232204/vendor/bundle ] as ec2-user@52.198.215.219
+ DEBUG [d06b41e4] Command: [ -L /var/www/chat-space/releases/20200914232204/vendor/bundle ]
+ DEBUG [d06b41e4] Finished in 0.104 seconds with exit status 1 (failed).
+ DEBUG [3c5835fe] Running [ -d /var/www/chat-space/releases/20200914232204/vendor/bundle ] as ec2-user@52.198.215.219
+ DEBUG [3c5835fe] Command: [ -d /var/www/chat-space/releases/20200914232204/vendor/bundle ]
+ DEBUG [3c5835fe] Finished in 0.102 seconds with exit status 1 (failed).
+  INFO [a710e9c1] Running /usr/bin/env ln -s /var/www/chat-space/shared/vendor/bundle /var/www/chat-space/releases/20200914232204/vendor/bundle as ec2-user@52.198.215.219
+ DEBUG [a710e9c1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /var/www/chat-space/shared/vendor/bundle /var/www/chat-space/releases/20200914232204/vendor/bundle )
+  INFO [a710e9c1] Finished in 0.106 seconds with exit status 0 (successful).
+ DEBUG [85ba2e52] Running [ -L /var/www/chat-space/releases/20200914232204/public/system ] as ec2-user@52.198.215.219
+ DEBUG [85ba2e52] Command: [ -L /var/www/chat-space/releases/20200914232204/public/system ]
+ DEBUG [85ba2e52] Finished in 0.138 seconds with exit status 1 (failed).
+ DEBUG [dcf496cf] Running [ -d /var/www/chat-space/releases/20200914232204/public/system ] as ec2-user@52.198.215.219
+ DEBUG [dcf496cf] Command: [ -d /var/www/chat-space/releases/20200914232204/public/system ]
+ DEBUG [dcf496cf] Finished in 0.103 seconds with exit status 1 (failed).
+  INFO [7ca2421e] Running /usr/bin/env ln -s /var/www/chat-space/shared/public/system /var/www/chat-space/releases/20200914232204/public/system as ec2-user@52.198.215.219
+ DEBUG [7ca2421e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /var/www/chat-space/shared/public/system /var/www/chat-space/releases/20200914232204/public/system )
+  INFO [7ca2421e] Finished in 0.105 seconds with exit status 0 (successful).
+ DEBUG [921ac1cd] Running [ -L /var/www/chat-space/releases/20200914232204/public/uploads ] as ec2-user@52.198.215.219
+ DEBUG [921ac1cd] Command: [ -L /var/www/chat-space/releases/20200914232204/public/uploads ]
+ DEBUG [921ac1cd] Finished in 0.101 seconds with exit status 1 (failed).
+ DEBUG [ac8711ab] Running [ -d /var/www/chat-space/releases/20200914232204/public/uploads ] as ec2-user@52.198.215.219
+ DEBUG [ac8711ab] Command: [ -d /var/www/chat-space/releases/20200914232204/public/uploads ]
+ DEBUG [ac8711ab] Finished in 0.102 seconds with exit status 1 (failed).
+  INFO [2afb4596] Running /usr/bin/env ln -s /var/www/chat-space/shared/public/uploads /var/www/chat-space/releases/20200914232204/public/uploads as ec2-user@52.198.215.219
+ DEBUG [2afb4596] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /var/www/chat-space/shared/public/uploads /var/www/chat-space/releases/20200914232204/public/uploads )
+  INFO [2afb4596] Finished in 0.105 seconds with exit status 0 (successful).
+ DEBUG [2c748012] Running [ -L /var/www/chat-space/releases/20200914232204/public/assets ] as ec2-user@52.198.215.219
+ DEBUG [2c748012] Command: [ -L /var/www/chat-space/releases/20200914232204/public/assets ]
+ DEBUG [2c748012] Finished in 0.100 seconds with exit status 1 (failed).
+ DEBUG [9774219a] Running [ -d /var/www/chat-space/releases/20200914232204/public/assets ] as ec2-user@52.198.215.219
+ DEBUG [9774219a] Command: [ -d /var/www/chat-space/releases/20200914232204/public/assets ]
+ DEBUG [9774219a] Finished in 0.102 seconds with exit status 1 (failed).
+  INFO [87bb407e] Running /usr/bin/env ln -s /var/www/chat-space/shared/public/assets /var/www/chat-space/releases/20200914232204/public/assets as ec2-user@52.198.215.219
+ DEBUG [87bb407e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /var/www/chat-space/shared/public/assets /var/www/chat-space/releases/20200914232204/public/assets )
+  INFO [87bb407e] Finished in 0.101 seconds with exit status 0 (successful).
+ DEBUG [6b839a40] Running if test ! -d /var/www/chat-space/releases/20200914232204; then echo "Directory does not exist '/var/www/chat-space/releases/20200914232204'" 1>&2; false; fi as ec2-user@52.198.215.219
+ DEBUG [6b839a40] Command: if test ! -d /var/www/chat-space/releases/20200914232204; then echo "Directory does not exist '/var/www/chat-space/releases/20200914232204'" 1>&2; false; fi
+ DEBUG [6b839a40] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO [3053084f] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true as ec2-user@52.198.215.219
+ DEBUG [3053084f] Command: cd /var/www/chat-space/releases/20200914232204 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
+  INFO [3053084f] Finished in 0.291 seconds with exit status 0 (successful).
+  INFO [a9a296ad] Running $HOME/.rbenv/bin/rbenv exec bundle config --local path /var/www/chat-space/shared/bundle as ec2-user@52.198.215.219
+ DEBUG [a9a296ad] Command: cd /var/www/chat-space/releases/20200914232204 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; $HOME/.rbenv/bin/rbenv exec bundle config --local path /var/www/chat-space/shared/bundle )
+  INFO [a9a296ad] Finished in 0.283 seconds with exit status 0 (successful).
+  INFO [3693b917] Running $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test as ec2-user@52.198.215.219
+ DEBUG [3693b917] Command: cd /var/www/chat-space/releases/20200914232204 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test )
+  INFO [3693b917] Finished in 0.295 seconds with exit status 0 (successful).
+ DEBUG [5fe3043f] Running if test ! -d /var/www/chat-space/releases/20200914232204; then echo "Directory does not exist '/var/www/chat-space/releases/20200914232204'" 1>&2; false; fi as ec2-user@52.198.215.219
+ DEBUG [5fe3043f] Command: if test ! -d /var/www/chat-space/releases/20200914232204; then echo "Directory does not exist '/var/www/chat-space/releases/20200914232204'" 1>&2; false; fi
+ DEBUG [5fe3043f] Finished in 0.097 seconds with exit status 0 (successful).
+ DEBUG [0c393c40] Running $HOME/.rbenv/bin/rbenv exec bundle check as ec2-user@52.198.215.219
+ DEBUG [0c393c40] Command: cd /var/www/chat-space/releases/20200914232204 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; $HOME/.rbenv/bin/rbenv exec bundle check )
+ DEBUG [0c393c40] 	The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
+ DEBUG [0c393c40] 	The following gems are missing
+ DEBUG [0c393c40] 	 * rake (13.0.1)
+ DEBUG [0c393c40] 	 * concurrent-ruby (1.1.7)
+ DEBUG [0c393c40] 	 * i18n (1.8.5)
+ DEBUG [0c393c40] 	 * minitest (5.14.2)
+ DEBUG [0c393c40] 	 * thread_safe (0.3.6)
+ DEBUG [0c393c40] 	 * tzinfo (1.2.7)
+ DEBUG [0c393c40] 	 * zeitwerk (2.4.0)
+ DEBUG [0c393c40] 	 * activesupport (6.0.3.3)
+ DEBUG [0c393c40] 	 * builder (3.2.4)
+ DEBUG [0c393c40] 	 * erubi (1.9.0)
+ DEBUG [0c393c40] 	 * mini_portile2 (2.4.0)
+ DEBUG [0c393c40] 	 * nokogiri (1.10.10)
+ DEBUG [0c393c40] 	 * rails-dom-testing (2.0.3)
+ DEBUG [0c393c40] 	 * crass (1.0.6)
+ DEBUG [0c393c40] 	 * loofah (2.7.0)
+ DEBUG [0c393c40] 	 * rails-html-sanitizer (1.3.0)
+ DEBUG [0c393c40] 	 * actionview (6.0.3.3)
+ DEBUG [0c393c40] 	 * rack (2.2.3)
+ DEBUG [0c393c40] 	 * rack-test (1.1.0)
+ DEBUG [0c393c40] 	 * actionpack (6.0.3.3)
+ DEBUG [0c393c40] 	 * nio4r (2.5.3)
+ DEBUG [0c393c40] 	 * websocket-extensions (0.1.5)
+ DEBUG [0c393c40] 	 * websocket-driver (0.7.3)
+ DEBUG [0c393c40] 	 * actioncable (6.0.3.3)
+ DEBUG [0c393c40] 	 * globalid (0.4.2)
+ DEBUG [0c393c40] 	 * activejob (6.0.3.3)
+ DEBUG [0c393c40] 	 * activemodel (6.0.3.3)
+ DEBUG [0c393c40] 	 * activerecord (6.0.3.3)
+ DEBUG [0c393c40] 	 * mimemagic (0.3.5)
+ DEBUG [0c393c40] 	 * marcel (0.3.3)
+ DEBUG [0c393c40] 	 * activestorage (6.0.3.3)
+ DEBUG [0c393c40] 	 * mini_mime (1.0.2)
+ DEBUG [0c393c40] 	 * mail (2.7.1)
+ DEBUG [0c393c40] 	 * actionmailbox (6.0.3.3)
+ DEBUG [0c393c40] 	 * actionmailer (6.0.3.3)
+ DEBUG [0c393c40] 	 * actiontext (6.0.3.3)
+ DEBUG [0c393c40] 	 * public_suffix (4.0.6)
+ DEBUG [0c393c40] 	 * addressable (2.7.0)
+ DEBUG [0c393c40] 	 * bcrypt (3.1.16)
+ DEBUG [0c393c40] 	 * msgpack (1.3.3)
+ DEBUG [0c393c40] 	 * bootsnap (1.4.8)
+ DEBUG [0c393c40] 	 * mini_magick (4.10.1)
+ DEBUG [0c393c40] 	 * ffi (1.13.1)
+ DEBUG [0c393c40] 	 * ruby-vips (2.0.17)
+ DEBUG [0c393c40] 	 * image_processing (1.11.0)
+ DEBUG [0c393c40] 	 * carrierwave (2.1.0)
+ DEBUG [0c393c40] 	 * coderay (1.1.3)
+ DEBUG [0c393c40] 	 * orm_adapter (0.5.0)
+ DEBUG [0c393c40] 	 * method_source (1.0.0)
+ DEBUG [0c393c40] 	 * thor (1.0.1)
+ DEBUG [0c393c40] 	 * railties (6.0.3.3)
+ DEBUG [0c393c40] 	 * responders (3.0.1)
+ DEBUG [0c393c40] 	 * warden (1.2.9)
+ DEBUG [0c393c40] 	 * devise (4.7.2)
+ DEBUG [0c393c40] 	 * erubis (2.7.0)
+ DEBUG [0c393c40] 	 * sassc (2.4.0)
+ DEBUG [0c393c40] 	 * font-awesome-sass (5.13.0)
+ DEBUG [0c393c40] 	 * temple (0.8.2)
+ DEBUG [0c393c40] 	 * tilt (2.0.10)
+ DEBUG [0c393c40] 	 * haml (5.1.2)
+ DEBUG [0c393c40] 	 * sexp_processor (4.15.1)
+ DEBUG [0c393c40] 	 * ruby_parser (3.15.0)
+ DEBUG [0c393c40] 	 * html2haml (2.2.0)
+ DEBUG [0c393c40] 	 * haml-rails (2.0.1)
+ DEBUG [0c393c40] 	 * jbuilder (2.10.0)
+ DEBUG [0c393c40] 	 * jquery-rails (4.4.0)
+ DEBUG [0c393c40] 	 * kgio (2.11.3)
+ DEBUG [0c393c40] 	 * mysql2 (0.5.3)
+ DEBUG [0c393c40] 	 * pry (0.13.1)
+ DEBUG [0c393c40] 	 * pry-rails (0.3.9)
+ DEBUG [0c393c40] 	 * puma (3.12.6)
+ DEBUG [0c393c40] 	 * rack-proxy (0.6.5)
+ DEBUG [0c393c40] 	 * sprockets (3.7.2)
+ DEBUG [0c393c40] 	 * sprockets-rails (3.2.1)
+ DEBUG [0c393c40] 	 * rails (6.0.3.3)
+ DEBUG [0c393c40] 	 * raindrops (0.19.1)
+ DEBUG [0c393c40] 	 * rb-fsevent (0.10.4)
+ DEBUG [0c393c40] 	 * rb-inotify (0.10.1)
+ DEBUG [0c393c40] 	 * sass-listen (4.0.0)
+ DEBUG [0c393c40] 	 * sass (3.7.4)
+ DEBUG [0c393c40] 	 * sass-rails (5.1.0)
+ DEBUG [0c393c40] 	 * turbolinks-source (5.2.0)
+ DEBUG [0c393c40] 	 * turbolinks (5.2.1)
+ DEBUG [0c393c40] 	 * unicorn (5.4.1)
+ DEBUG [0c393c40] 	 * webpacker (4.3.0)
+ DEBUG [0c393c40] 	Install missing gems with `bundle install`
+ DEBUG [0c393c40] Finished in 0.412 seconds with exit status 1 (failed).
+  INFO [36ea7822] Running $HOME/.rbenv/bin/rbenv exec bundle install --jobs 4 --quiet as ec2-user@52.198.215.219
+ DEBUG [36ea7822] Command: cd /var/www/chat-space/releases/20200914232204 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; $HOME/.rbenv/bin/rbenv exec bundle install --jobs 4 --quiet )
+  INFO [36ea7822] Finished in 240.325 seconds with exit status 0 (successful).
+ DEBUG [143924c2] Running if test ! -d /var/www/chat-space/releases/20200914232204; then echo "Directory does not exist '/var/www/chat-space/releases/20200914232204'" 1>&2; false; fi as ec2-user@52.198.215.219
+ DEBUG [143924c2] Command: if test ! -d /var/www/chat-space/releases/20200914232204; then echo "Directory does not exist '/var/www/chat-space/releases/20200914232204'" 1>&2; false; fi
+ DEBUG [143924c2] Finished in 0.177 seconds with exit status 0 (successful).
+  INFO [2a442b1b] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile as ec2-user@52.198.215.219
+ DEBUG [2a442b1b] Command: cd /var/www/chat-space/releases/20200914232204 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" RAILS_ENV="production" RAILS_GROUPS="" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [2a442b1b] 	yarn install v1.22.5
+ DEBUG [2a442b1b] 	[1/4] Resolving packages...
+ DEBUG [2a442b1b] 	[2/4] Fetching packages...
+ DEBUG [2a442b1b] 	info fsevents@2.1.3: The platform "linux" is incompatible with this module.
+ DEBUG [2a442b1b] 	info "fsevents@2.1.3" is an optional dependency and failed compatibility check. Excluding it from installation.
+ DEBUG [2a442b1b] 	info fsevents@1.2.13: The platform "linux" is incompatible with this module.
+ DEBUG [2a442b1b] 	info "fsevents@1.2.13" is an optional dependency and failed compatibility check. Excluding it from installation.
+ DEBUG [2a442b1b] 	[3/4] Linking dependencies...
+ DEBUG [2a442b1b] 	warning " > webpack-dev-server@3.11.0" has unmet peer dependency "webpack@^4.0.0 || ^5.0.0".
+ DEBUG [2a442b1b] 	warning "webpack-dev-server > webpack-dev-middleware@3.7.2" has unmet peer dependency "webpack@^4.0.0".
+ DEBUG [2a442b1b] 	[4/4] Building fresh packages...
+ DEBUG [2a442b1b] 	Done in 11.23s.
+ DEBUG [2a442b1b] 	yarn install v1.22.5
+ DEBUG [2a442b1b] 	[1/4] Resolving packages...
+ DEBUG [2a442b1b] 	[2/4] Fetching packages...
+ DEBUG [2a442b1b] 	info fsevents@2.1.3: The platform "linux" is incompatible with this module.
+ DEBUG [2a442b1b] 	info "fsevents@2.1.3" is an optional dependency and failed compatibility check. Excluding it from installation.
+ DEBUG [2a442b1b] 	info fsevents@1.2.13: The platform "linux" is incompatible with this module.
+ DEBUG [2a442b1b] 	info "fsevents@1.2.13" is an optional dependency and failed compatibility check. Excluding it from installation.
+ DEBUG [2a442b1b] 	[3/4] Linking dependencies...
+ DEBUG [2a442b1b] 	warning " > webpack-dev-server@3.11.0" has unmet peer dependency "webpack@^4.0.0 || ^5.0.0".
+ DEBUG [2a442b1b] 	warning "webpack-dev-server > webpack-dev-middleware@3.7.2" has unmet peer dependency "webpack@^4.0.0".
+ DEBUG [2a442b1b] 	[4/4] Building fresh packages...
+ DEBUG [2a442b1b] 	Done in 3.81s.
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.184518 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/autoReload-5a89038199023588053a2f81a01a9dc705407a61614e665fe3cf14a577fc6590.js
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.184920 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/autoReload-5a89038199023588053a2f81a01a9dc705407a61614e665fe3cf14a577fc6590.js.gz
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.187964 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/font-awesome/fa-brands-400-811e1577184066108ceca86d5a624a9012303df5206c5cb0b27d5e3fedcba5a3.eot
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.188212 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/font-awesome/fa-brands-400-811e1577184066108ceca86d5a624a9012303df5206c5cb0b27d5e3fedcba5a3.eot.gz
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.195264 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/font-awesome/fa-regular-400-01f4416f5db59e2dd6b6fbd9dc32336d99db18f7eb623a49f584d04afd279473.eot
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.195457 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/font-awesome/fa-regular-400-01f4416f5db59e2dd6b6fbd9dc32336d99db18f7eb623a49f584d04afd279473.eot.gz
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.203924 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/font-awesome/fa-solid-900-32501727bb23fc77615b1ec76b5f298ec22198c0f3d6a3e7d6fe4ac3cf315db9.eot
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.204211 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/font-awesome/fa-solid-900-32501727bb23fc77615b1ec76b5f298ec22198c0f3d6a3e7d6fe4ac3cf315db9.eot.gz
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.215946 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/font-awesome/fa-brands-400-02340ba1789d09bcc507563c89c4a847ba537bb8132082777a50519cf74bcb5b.svg
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.216620 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/font-awesome/fa-brands-400-02340ba1789d09bcc507563c89c4a847ba537bb8132082777a50519cf74bcb5b.svg.gz
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.223650 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/font-awesome/fa-regular-400-865fd23de13b1920280e182359579e09eff7a09eb24676eceec7552838559f55.svg
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.226490 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/font-awesome/fa-regular-400-865fd23de13b1920280e182359579e09eff7a09eb24676eceec7552838559f55.svg.gz
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.244633 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/font-awesome/fa-solid-900-e768539808757f7eec20f09c9ee9b36b0e6c5636e90c9ee697995cbbc6ee0555.svg
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.246986 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/font-awesome/fa-solid-900-e768539808757f7eec20f09c9ee9b36b0e6c5636e90c9ee697995cbbc6ee0555.svg.gz
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.259650 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/font-awesome/fa-brands-400-a0c145382acfe59767d1487d6505f349665b685c2885cd91b621d141a292b0f8.ttf
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.287767 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/font-awesome/fa-brands-400-a0c145382acfe59767d1487d6505f349665b685c2885cd91b621d141a292b0f8.ttf.gz
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.290834 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/font-awesome/fa-regular-400-f32b94a29060dfec0c797a1dfe111357eb1d682f1aca4ac4b95cf0f4c3e2bfa9.ttf
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.291254 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/font-awesome/fa-regular-400-f32b94a29060dfec0c797a1dfe111357eb1d682f1aca4ac4b95cf0f4c3e2bfa9.ttf.gz
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.303897 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/font-awesome/fa-solid-900-231d68cefbc6846fb78cafca8467401a4f371e226418662e8900e3d52adc00ab.ttf
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.304554 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/font-awesome/fa-solid-900-231d68cefbc6846fb78cafca8467401a4f371e226418662e8900e3d52adc00ab.ttf.gz
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.316265 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/font-awesome/fa-brands-400-e836c5d5dfc13e18170c5bddefb4fdac7c65ac0ad43a4b431acdc4a98865a260.woff
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.324591 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/font-awesome/fa-regular-400-8e2d96198711b63752e5f2f5987b8ffc536df6156a065bdbe28cb7231cad793d.woff
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.339950 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/font-awesome/fa-solid-900-352f8ead280419dd953d2bc7843386bb9430e8152c2dbd2c2d2494f6b9567ee7.woff
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.347411 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/font-awesome/fa-brands-400-5d9190292acdd48ba0fc35080f7e7448f3cdf0d79199a4d23f0f49b5341fdf29.woff2
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.355308 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/font-awesome/fa-regular-400-6a8c8e9e1e7f692c21af1956de163f3d026778e6449fe93a09a671847ca1ae65.woff2
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.359814 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/font-awesome/fa-solid-900-7f4d3fd0a705dbf8403298aad91d5de6972e6b5d536068eba8b24954a5a0a8c7.woff2
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.591363 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/application-6483d11349bbeaad64efd00da4ce250636e577e7f341a790c1f8b488917845c2.js
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:36.592078 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/application-6483d11349bbeaad64efd00da4ce250636e577e7f341a790c1f8b488917845c2.js.gz
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:41.223397 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/application-1580de44a64f1311181c0b9f2026996cf87cdb980c345f815ed67bd2a5cfa896.css
+ DEBUG [2a442b1b] 	I, [2020-09-14T23:26:41.223888 #32701]  INFO -- : Writing /var/www/chat-space/releases/20200914232204/public/assets/application-1580de44a64f1311181c0b9f2026996cf87cdb980c345f815ed67bd2a5cfa896.css.gz
+ DEBUG [2a442b1b] 	Compiling...
+ DEBUG [2a442b1b] 	Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration.entry should be an non-empty object.
+   -> Multiple entry bundles are created. The key is the chunk name. The value can be a string or an array.
+
