@@ -2029,3 +2029,190 @@ Invalid configuration object. Webpack has been initialised using a configuration
  - configuration.entry should be an non-empty object.
    -> Multiple entry bundles are created. The key is the chunk name. The value can be a string or an array.
 
+  INFO ---------------------------------------------------------------------------
+  INFO START 2020-09-15 22:16:20 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [004694c4] Running [ -d $HOME/.rbenv/versions/2.6.5 ] as ec2-user@52.198.215.219
+ DEBUG [004694c4] Command: [ -d $HOME/.rbenv/versions/2.6.5 ]
+ DEBUG [004694c4] Finished in 0.468 seconds with exit status 0 (successful).
+  INFO [81e29ec1] Running /usr/bin/env mkdir -p /tmp as ec2-user@52.198.215.219
+ DEBUG [81e29ec1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /tmp )
+  INFO [81e29ec1] Finished in 0.112 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-chat-space-production-mitsuhirochikazawa.sh 0.0%
+  INFO Uploading /tmp/git-ssh-chat-space-production-mitsuhirochikazawa.sh 100.0%
+  INFO [54e4bdf4] Running /usr/bin/env chmod 700 /tmp/git-ssh-chat-space-production-mitsuhirochikazawa.sh as ec2-user@52.198.215.219
+ DEBUG [54e4bdf4] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env chmod 700 /tmp/git-ssh-chat-space-production-mitsuhirochikazawa.sh )
+  INFO [54e4bdf4] Finished in 0.122 seconds with exit status 0 (successful).
+  INFO [819e95dc] Running /usr/bin/env git ls-remote git@github.com:chika-tsubaru/chat-space.git HEAD as ec2-user@52.198.215.219
+ DEBUG [819e95dc] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-chat-space-production-mitsuhirochikazawa.sh" ; /usr/bin/env git ls-remote git@github.com:chika-tsubaru/chat-space.git HEAD )
+ DEBUG [819e95dc] 	575d0289371118f06fe83877957ebd4cd8a042de	HEAD
+  INFO [819e95dc] Finished in 2.072 seconds with exit status 0 (successful).
+  INFO [0a95ffa3] Running /usr/bin/env mkdir -p /var/www/chat-space/shared /var/www/chat-space/releases as ec2-user@52.198.215.219
+ DEBUG [0a95ffa3] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /var/www/chat-space/shared /var/www/chat-space/releases )
+  INFO [0a95ffa3] Finished in 0.119 seconds with exit status 0 (successful).
+  INFO [a3bfce70] Running /usr/bin/env mkdir -p /var/www/chat-space/shared/log /var/www/chat-space/shared/tmp/pids /var/www/chat-space/shared/tmp/cache /var/www/chat-space/shared/tmp/sockets /var/www/chat-space/shared/vendor/bundle /var/www/chat-space/shared/public/system /var/www/chat-space/shared/public/uploads /var/www/chat-space/shared/public/assets as ec2-user@52.198.215.219
+ DEBUG [a3bfce70] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /var/www/chat-space/shared/log /var/www/chat-space/shared/tmp/pids /var/www/chat-space/shared/tmp/cache /var/www/chat-space/shared/tmp/sockets /var/www/chat-space/shared/vendor/bundle /var/www/chat-space/shared/public/system /var/www/chat-space/shared/public/uploads /var/www/chat-space/shared/public/assets )
+  INFO [a3bfce70] Finished in 0.106 seconds with exit status 0 (successful).
+ DEBUG [8af59a5d] Running [ -f /var/www/chat-space/current/REVISION ] as ec2-user@52.198.215.219
+ DEBUG [8af59a5d] Command: [ -f /var/www/chat-space/current/REVISION ]
+ DEBUG [8af59a5d] Finished in 0.105 seconds with exit status 1 (failed).
+ DEBUG [3bc1d31c] Running [ -f /var/www/chat-space/repo/HEAD ] as ec2-user@52.198.215.219
+ DEBUG [3bc1d31c] Command: [ -f /var/www/chat-space/repo/HEAD ]
+ DEBUG [3bc1d31c] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/chat-space/repo
+ DEBUG [08904834] Running if test ! -d /var/www/chat-space/repo; then echo "Directory does not exist '/var/www/chat-space/repo'" 1>&2; false; fi as ec2-user@52.198.215.219
+ DEBUG [08904834] Command: if test ! -d /var/www/chat-space/repo; then echo "Directory does not exist '/var/www/chat-space/repo'" 1>&2; false; fi
+ DEBUG [08904834] Finished in 0.115 seconds with exit status 0 (successful).
+  INFO [7c22825b] Running /usr/bin/env git remote set-url origin git@github.com:chika-tsubaru/chat-space.git as ec2-user@52.198.215.219
+ DEBUG [7c22825b] Command: cd /var/www/chat-space/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-chat-space-production-mitsuhirochikazawa.sh" ; /usr/bin/env git remote set-url origin git@github.com:chika-tsubaru/chat-space.git )
+  INFO [7c22825b] Finished in 0.113 seconds with exit status 0 (successful).
+  INFO [8dc2a96e] Running /usr/bin/env git remote update --prune as ec2-user@52.198.215.219
+ DEBUG [8dc2a96e] Command: cd /var/www/chat-space/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-chat-space-production-mitsuhirochikazawa.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [8dc2a96e] 	Fetching origin
+ DEBUG [8dc2a96e] 	From github.com:chika-tsubaru/chat-space
+   8bb90e7..575d028  master     -> master
+  INFO [8dc2a96e] Finished in 2.221 seconds with exit status 0 (successful).
+ DEBUG [b013c08f] Running if test ! -d /var/www/chat-space/repo; then echo "Directory does not exist '/var/www/chat-space/repo'" 1>&2; false; fi as ec2-user@52.198.215.219
+ DEBUG [b013c08f] Command: if test ! -d /var/www/chat-space/repo; then echo "Directory does not exist '/var/www/chat-space/repo'" 1>&2; false; fi
+ DEBUG [b013c08f] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [33c21f03] Running /usr/bin/env mkdir -p /var/www/chat-space/releases/20200915131623 as ec2-user@52.198.215.219
+ DEBUG [33c21f03] Command: cd /var/www/chat-space/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-chat-space-production-mitsuhirochikazawa.sh" ; /usr/bin/env mkdir -p /var/www/chat-space/releases/20200915131623 )
+  INFO [33c21f03] Finished in 0.107 seconds with exit status 0 (successful).
+  INFO [1ca0328b] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/chat-space/releases/20200915131623 as ec2-user@52.198.215.219
+ DEBUG [1ca0328b] Command: cd /var/www/chat-space/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-chat-space-production-mitsuhirochikazawa.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/chat-space/releases/20200915131623 )
+  INFO [1ca0328b] Finished in 0.177 seconds with exit status 0 (successful).
+ DEBUG [b86520c0] Running if test ! -d /var/www/chat-space/repo; then echo "Directory does not exist '/var/www/chat-space/repo'" 1>&2; false; fi as ec2-user@52.198.215.219
+ DEBUG [b86520c0] Command: if test ! -d /var/www/chat-space/repo; then echo "Directory does not exist '/var/www/chat-space/repo'" 1>&2; false; fi
+ DEBUG [b86520c0] Finished in 0.112 seconds with exit status 0 (successful).
+ DEBUG [f10d0d9d] Running /usr/bin/env git rev-list --max-count=1 master as ec2-user@52.198.215.219
+ DEBUG [f10d0d9d] Command: cd /var/www/chat-space/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-chat-space-production-mitsuhirochikazawa.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [f10d0d9d] 	575d0289371118f06fe83877957ebd4cd8a042de
+ DEBUG [f10d0d9d] Finished in 0.108 seconds with exit status 0 (successful).
+ DEBUG [669465d3] Running if test ! -d /var/www/chat-space/releases/20200915131623; then echo "Directory does not exist '/var/www/chat-space/releases/20200915131623'" 1>&2; false; fi as ec2-user@52.198.215.219
+ DEBUG [669465d3] Command: if test ! -d /var/www/chat-space/releases/20200915131623; then echo "Directory does not exist '/var/www/chat-space/releases/20200915131623'" 1>&2; false; fi
+ DEBUG [669465d3] Finished in 0.106 seconds with exit status 0 (successful).
+  INFO [149c00e9] Running /usr/bin/env echo "575d0289371118f06fe83877957ebd4cd8a042de" > REVISION as ec2-user@52.198.215.219
+ DEBUG [149c00e9] Command: cd /var/www/chat-space/releases/20200915131623 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env echo "575d0289371118f06fe83877957ebd4cd8a042de" > REVISION )
+  INFO [149c00e9] Finished in 0.110 seconds with exit status 0 (successful).
+  INFO [6bf988e5] Running /usr/bin/env mkdir -p /var/www/chat-space/releases/20200915131623 /var/www/chat-space/releases/20200915131623/tmp /var/www/chat-space/releases/20200915131623/vendor /var/www/chat-space/releases/20200915131623/public as ec2-user@52.198.215.219
+ DEBUG [6bf988e5] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /var/www/chat-space/releases/20200915131623 /var/www/chat-space/releases/20200915131623/tmp /var/www/chat-space/releases/20200915131623/vendor /var/www/chat-space/releases/20200915131623/public )
+  INFO [6bf988e5] Finished in 0.115 seconds with exit status 0 (successful).
+ DEBUG [60c85e24] Running [ -L /var/www/chat-space/releases/20200915131623/log ] as ec2-user@52.198.215.219
+ DEBUG [60c85e24] Command: [ -L /var/www/chat-space/releases/20200915131623/log ]
+ DEBUG [60c85e24] Finished in 0.101 seconds with exit status 1 (failed).
+ DEBUG [9868b9d3] Running [ -d /var/www/chat-space/releases/20200915131623/log ] as ec2-user@52.198.215.219
+ DEBUG [9868b9d3] Command: [ -d /var/www/chat-space/releases/20200915131623/log ]
+ DEBUG [9868b9d3] Finished in 0.104 seconds with exit status 0 (successful).
+  INFO [2393a51b] Running /usr/bin/env rm -rf /var/www/chat-space/releases/20200915131623/log as ec2-user@52.198.215.219
+ DEBUG [2393a51b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env rm -rf /var/www/chat-space/releases/20200915131623/log )
+  INFO [2393a51b] Finished in 0.120 seconds with exit status 0 (successful).
+  INFO [dabfae5a] Running /usr/bin/env ln -s /var/www/chat-space/shared/log /var/www/chat-space/releases/20200915131623/log as ec2-user@52.198.215.219
+ DEBUG [dabfae5a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /var/www/chat-space/shared/log /var/www/chat-space/releases/20200915131623/log )
+  INFO [dabfae5a] Finished in 0.112 seconds with exit status 0 (successful).
+ DEBUG [90b10141] Running [ -L /var/www/chat-space/releases/20200915131623/tmp/pids ] as ec2-user@52.198.215.219
+ DEBUG [90b10141] Command: [ -L /var/www/chat-space/releases/20200915131623/tmp/pids ]
+ DEBUG [90b10141] Finished in 0.105 seconds with exit status 1 (failed).
+ DEBUG [f1744c41] Running [ -d /var/www/chat-space/releases/20200915131623/tmp/pids ] as ec2-user@52.198.215.219
+ DEBUG [f1744c41] Command: [ -d /var/www/chat-space/releases/20200915131623/tmp/pids ]
+ DEBUG [f1744c41] Finished in 0.125 seconds with exit status 1 (failed).
+  INFO [6439395e] Running /usr/bin/env ln -s /var/www/chat-space/shared/tmp/pids /var/www/chat-space/releases/20200915131623/tmp/pids as ec2-user@52.198.215.219
+ DEBUG [6439395e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /var/www/chat-space/shared/tmp/pids /var/www/chat-space/releases/20200915131623/tmp/pids )
+  INFO [6439395e] Finished in 0.116 seconds with exit status 0 (successful).
+ DEBUG [492626db] Running [ -L /var/www/chat-space/releases/20200915131623/tmp/cache ] as ec2-user@52.198.215.219
+ DEBUG [492626db] Command: [ -L /var/www/chat-space/releases/20200915131623/tmp/cache ]
+ DEBUG [492626db] Finished in 0.103 seconds with exit status 1 (failed).
+ DEBUG [62b5a1ee] Running [ -d /var/www/chat-space/releases/20200915131623/tmp/cache ] as ec2-user@52.198.215.219
+ DEBUG [62b5a1ee] Command: [ -d /var/www/chat-space/releases/20200915131623/tmp/cache ]
+ DEBUG [62b5a1ee] Finished in 0.111 seconds with exit status 1 (failed).
+  INFO [2d073dde] Running /usr/bin/env ln -s /var/www/chat-space/shared/tmp/cache /var/www/chat-space/releases/20200915131623/tmp/cache as ec2-user@52.198.215.219
+ DEBUG [2d073dde] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /var/www/chat-space/shared/tmp/cache /var/www/chat-space/releases/20200915131623/tmp/cache )
+  INFO [2d073dde] Finished in 0.108 seconds with exit status 0 (successful).
+ DEBUG [712265ce] Running [ -L /var/www/chat-space/releases/20200915131623/tmp/sockets ] as ec2-user@52.198.215.219
+ DEBUG [712265ce] Command: [ -L /var/www/chat-space/releases/20200915131623/tmp/sockets ]
+ DEBUG [712265ce] Finished in 0.106 seconds with exit status 1 (failed).
+ DEBUG [a68cdd7d] Running [ -d /var/www/chat-space/releases/20200915131623/tmp/sockets ] as ec2-user@52.198.215.219
+ DEBUG [a68cdd7d] Command: [ -d /var/www/chat-space/releases/20200915131623/tmp/sockets ]
+ DEBUG [a68cdd7d] Finished in 0.109 seconds with exit status 1 (failed).
+  INFO [b609bec9] Running /usr/bin/env ln -s /var/www/chat-space/shared/tmp/sockets /var/www/chat-space/releases/20200915131623/tmp/sockets as ec2-user@52.198.215.219
+ DEBUG [b609bec9] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /var/www/chat-space/shared/tmp/sockets /var/www/chat-space/releases/20200915131623/tmp/sockets )
+  INFO [b609bec9] Finished in 0.105 seconds with exit status 0 (successful).
+ DEBUG [e43844dc] Running [ -L /var/www/chat-space/releases/20200915131623/vendor/bundle ] as ec2-user@52.198.215.219
+ DEBUG [e43844dc] Command: [ -L /var/www/chat-space/releases/20200915131623/vendor/bundle ]
+ DEBUG [e43844dc] Finished in 0.109 seconds with exit status 1 (failed).
+ DEBUG [60a2db0e] Running [ -d /var/www/chat-space/releases/20200915131623/vendor/bundle ] as ec2-user@52.198.215.219
+ DEBUG [60a2db0e] Command: [ -d /var/www/chat-space/releases/20200915131623/vendor/bundle ]
+ DEBUG [60a2db0e] Finished in 0.112 seconds with exit status 1 (failed).
+  INFO [72613ddb] Running /usr/bin/env ln -s /var/www/chat-space/shared/vendor/bundle /var/www/chat-space/releases/20200915131623/vendor/bundle as ec2-user@52.198.215.219
+ DEBUG [72613ddb] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /var/www/chat-space/shared/vendor/bundle /var/www/chat-space/releases/20200915131623/vendor/bundle )
+  INFO [72613ddb] Finished in 0.109 seconds with exit status 0 (successful).
+ DEBUG [d8bae855] Running [ -L /var/www/chat-space/releases/20200915131623/public/system ] as ec2-user@52.198.215.219
+ DEBUG [d8bae855] Command: [ -L /var/www/chat-space/releases/20200915131623/public/system ]
+ DEBUG [d8bae855] Finished in 0.110 seconds with exit status 1 (failed).
+ DEBUG [3b269590] Running [ -d /var/www/chat-space/releases/20200915131623/public/system ] as ec2-user@52.198.215.219
+ DEBUG [3b269590] Command: [ -d /var/www/chat-space/releases/20200915131623/public/system ]
+ DEBUG [3b269590] Finished in 0.123 seconds with exit status 1 (failed).
+  INFO [b605e77a] Running /usr/bin/env ln -s /var/www/chat-space/shared/public/system /var/www/chat-space/releases/20200915131623/public/system as ec2-user@52.198.215.219
+ DEBUG [b605e77a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /var/www/chat-space/shared/public/system /var/www/chat-space/releases/20200915131623/public/system )
+  INFO [b605e77a] Finished in 0.122 seconds with exit status 0 (successful).
+ DEBUG [0383718d] Running [ -L /var/www/chat-space/releases/20200915131623/public/uploads ] as ec2-user@52.198.215.219
+ DEBUG [0383718d] Command: [ -L /var/www/chat-space/releases/20200915131623/public/uploads ]
+ DEBUG [0383718d] Finished in 0.103 seconds with exit status 1 (failed).
+ DEBUG [401c5a46] Running [ -d /var/www/chat-space/releases/20200915131623/public/uploads ] as ec2-user@52.198.215.219
+ DEBUG [401c5a46] Command: [ -d /var/www/chat-space/releases/20200915131623/public/uploads ]
+ DEBUG [401c5a46] Finished in 0.110 seconds with exit status 1 (failed).
+  INFO [d4f17176] Running /usr/bin/env ln -s /var/www/chat-space/shared/public/uploads /var/www/chat-space/releases/20200915131623/public/uploads as ec2-user@52.198.215.219
+ DEBUG [d4f17176] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /var/www/chat-space/shared/public/uploads /var/www/chat-space/releases/20200915131623/public/uploads )
+  INFO [d4f17176] Finished in 0.122 seconds with exit status 0 (successful).
+ DEBUG [b202b72d] Running [ -L /var/www/chat-space/releases/20200915131623/public/assets ] as ec2-user@52.198.215.219
+ DEBUG [b202b72d] Command: [ -L /var/www/chat-space/releases/20200915131623/public/assets ]
+ DEBUG [b202b72d] Finished in 0.119 seconds with exit status 1 (failed).
+ DEBUG [9caec0a8] Running [ -d /var/www/chat-space/releases/20200915131623/public/assets ] as ec2-user@52.198.215.219
+ DEBUG [9caec0a8] Command: [ -d /var/www/chat-space/releases/20200915131623/public/assets ]
+ DEBUG [9caec0a8] Finished in 0.131 seconds with exit status 1 (failed).
+  INFO [f668537f] Running /usr/bin/env ln -s /var/www/chat-space/shared/public/assets /var/www/chat-space/releases/20200915131623/public/assets as ec2-user@52.198.215.219
+ DEBUG [f668537f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /var/www/chat-space/shared/public/assets /var/www/chat-space/releases/20200915131623/public/assets )
+  INFO [f668537f] Finished in 0.112 seconds with exit status 0 (successful).
+ DEBUG [3609acaa] Running if test ! -d /var/www/chat-space/releases/20200915131623; then echo "Directory does not exist '/var/www/chat-space/releases/20200915131623'" 1>&2; false; fi as ec2-user@52.198.215.219
+ DEBUG [3609acaa] Command: if test ! -d /var/www/chat-space/releases/20200915131623; then echo "Directory does not exist '/var/www/chat-space/releases/20200915131623'" 1>&2; false; fi
+ DEBUG [3609acaa] Finished in 0.108 seconds with exit status 0 (successful).
+  INFO [514ad176] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true as ec2-user@52.198.215.219
+ DEBUG [514ad176] Command: cd /var/www/chat-space/releases/20200915131623 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
+  INFO [514ad176] Finished in 0.311 seconds with exit status 0 (successful).
+  INFO [5c9abc08] Running $HOME/.rbenv/bin/rbenv exec bundle config --local path /var/www/chat-space/shared/bundle as ec2-user@52.198.215.219
+ DEBUG [5c9abc08] Command: cd /var/www/chat-space/releases/20200915131623 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; $HOME/.rbenv/bin/rbenv exec bundle config --local path /var/www/chat-space/shared/bundle )
+  INFO [5c9abc08] Finished in 0.288 seconds with exit status 0 (successful).
+  INFO [35c8b977] Running $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test as ec2-user@52.198.215.219
+ DEBUG [35c8b977] Command: cd /var/www/chat-space/releases/20200915131623 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test )
+  INFO [35c8b977] Finished in 0.286 seconds with exit status 0 (successful).
+ DEBUG [85f222e1] Running if test ! -d /var/www/chat-space/releases/20200915131623; then echo "Directory does not exist '/var/www/chat-space/releases/20200915131623'" 1>&2; false; fi as ec2-user@52.198.215.219
+ DEBUG [85f222e1] Command: if test ! -d /var/www/chat-space/releases/20200915131623; then echo "Directory does not exist '/var/www/chat-space/releases/20200915131623'" 1>&2; false; fi
+ DEBUG [85f222e1] Finished in 0.101 seconds with exit status 0 (successful).
+ DEBUG [54c113a0] Running $HOME/.rbenv/bin/rbenv exec bundle check as ec2-user@52.198.215.219
+ DEBUG [54c113a0] Command: cd /var/www/chat-space/releases/20200915131623 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; $HOME/.rbenv/bin/rbenv exec bundle check )
+ DEBUG [54c113a0] 	The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
+ DEBUG [54c113a0] 	The Gemfile's dependencies are satisfied
+ DEBUG [54c113a0] Finished in 0.375 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [c9cd8087] Running if test ! -d /var/www/chat-space/releases/20200915131623; then echo "Directory does not exist '/var/www/chat-space/releases/20200915131623'" 1>&2; false; fi as ec2-user@52.198.215.219
+ DEBUG [c9cd8087] Command: if test ! -d /var/www/chat-space/releases/20200915131623; then echo "Directory does not exist '/var/www/chat-space/releases/20200915131623'" 1>&2; false; fi
+ DEBUG [c9cd8087] Finished in 0.107 seconds with exit status 0 (successful).
+  INFO [dfce86d0] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile as ec2-user@52.198.215.219
+ DEBUG [dfce86d0] Command: cd /var/www/chat-space/releases/20200915131623 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" RAILS_ENV="production" RAILS_GROUPS="" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [dfce86d0] 	bundler: failed to load command: rake (/var/www/chat-space/shared/bundle/ruby/2.6.0/bin/rake)
+ DEBUG [dfce86d0] 	Bundler::ProductionError: You are trying to install in deployment mode after changing
+your Gemfile. Run `bundle install` elsewhere and add the
+updated Gemfile.lock to version control.
+
+If this is a development machine, remove the /var/www/chat-space/releases/20200915131623/Gemfile freeze 
+by running `bundle config unset deployment`.
+
+You have deleted from the Gemfile:
+* webpacker (~> 4.0)
+
+  /home/ec2-user/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.1.4/lib/bundler/definition.rb:466:in `ensure_equivalent_gemfile_and_lockfile'
+  /home/ec2-user/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.1.4/lib/bundler/runtime.rb:13:in `setup'
+  /home/ec2-user/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.1.4/lib/bundler.rb:149:in `setup'
+  /home/ec2-user/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.1.4/lib/bundler/setup.rb:20:in `block in <top (required)>'
+  /home/ec2-user/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.1.4/lib/bundler/ui/shell.rb:136:in `with_level'
+  /home/ec2-user/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.1.4/lib/bundler/ui/shell.rb:88:in `silence'
+  /home/ec2-user/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.1.4/lib/bundler/setup.rb:20:in `<top (required)>'
